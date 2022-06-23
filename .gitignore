@@ -1,0 +1,6 @@
+*.apk
+*.jar
+apkeep
+*.dex
+revanced-cache/
+build/
