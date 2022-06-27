@@ -1,7 +1,5 @@
 {
-    "response": [
-      {
-        "latestVersion": "17.24.35"
-      }
-    ]
+  "latestVersion": "17.24.35",
+  "downloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.24.35/revanced-nonroot-signed.apk",
+  "microGDownloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.24.35/vanced-microG.apk"
 }
