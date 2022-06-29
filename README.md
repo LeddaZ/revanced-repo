@@ -1,16 +1,17 @@
 # ReVanced Repo
-This repo template will allow you to build non-root ReVanced using Github Actions. This will help people who don't want to setup build environments on their machines.
-By default this will build non-root ReVanced with all patches except the following:
+This repo template will allow you to build non-root ReVanced using GitHub Actions. This will help people who don't want to setup build environments on their machines.
+By default this will build non-root ReVanced with these patches:
 
-- background-play
-- exclusive-audio-playback
-- codecs-unlock
-- upgrade-button-remover
-- disable-create-button
-- premium-heading
-- disable-shorts-button
-- disable-fullscreen-panels
-- tasteBuilder-remover
+- custom-playback-speed (temporarily excluded since it's not compatible with 17.24.35)
+- seekbar-tapping
+- general-ads
+- video-ads
+- custom-branding
+- minimized-playback
+- old-quality-layout
+- amoled
+- hide-watermark
+- microg-support
 
 You can modify the `build_revanced.sh` script to choose the patches you want.
 
