@@ -48,7 +48,7 @@ jobs:
       - uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "17.24.35"
+          automatic_release_tag: "17.25.34"
           title: "Release ${{ env.date_now }}"
           files: |
             build/SHA-256.txt

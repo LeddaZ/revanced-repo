@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Latest compatible versions of APKs
-# YouTube 17.24.35
+# YouTube 17.25.34
 # Vanced microG 0.2.24.220220
 
-YT_VERSION="17.24.35"
+YT_VERSION="17.25.34"
 VMG_VERSION="0.2.24.220220"
 
 # Artifacts associative array aka dictionary
@@ -47,7 +47,7 @@ mkdir -p build
 # Available patches: premium-heading, disable-fullscreen-panels, disable-create-button, disable-shorts-button,
 # custom-playback-speed, seekbar-tapping, general-ads, video-ads, custom-branding, minimized-playback,
 # old-quality-layout, amoled, hide-cast-button, hide-watermark, microg-support
-excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e disable-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e custom-playback-speed"
+excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e disable-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
