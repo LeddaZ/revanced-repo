@@ -10,7 +10,7 @@ By default this will build non-root ReVanced with these patches:
 - minimized-playback
 - old-quality-layout
 - amoled
-- hide-watermark
+- hide-watermark (temporarily excluded since it's compatible with 17.25.34 but for some reason it doesn't work; ReVanced issue)
 - microg-support
 
 You can modify the `build_revanced.sh` script to choose the patches you want.
