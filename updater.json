@@ -1,8 +1,8 @@
 {
   "latestReVancedVersion": "17.25.34",
   "latestMicroGVersion": "0.2.24.220220",
-  "latestAppVersion": "1.1.0",
+  "latestAppVersion": "1.1.1",
   "downloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.25.34/revanced-nonroot-signed.apk",
   "microGDownloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.25.34/vanced-microG.apk",
-  "appDownloadUrl": "https://github.com/LeddaZ/ReVancedUpdater/releases/download/1.1.0/app-release.apk"
+  "appDownloadUrl": "https://github.com/LeddaZ/ReVancedUpdater/releases/download/1.1.1/app-release.apk"
 }
