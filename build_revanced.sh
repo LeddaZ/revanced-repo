@@ -46,8 +46,9 @@ echo "************************************"
 mkdir -p build
 # Available patches: premium-heading, disable-fullscreen-panels, disable-create-button, disable-shorts-button,
 # custom-playback-speed, seekbar-tapping, general-ads, video-ads, custom-branding, minimized-playback,
-# old-quality-layout, amoled, hide-cast-button, hide-watermark, microg-support
-excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e disable-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button"
+# old-quality-layout, amoled, hide-cast-button, hide-watermark, microg-support, hdr-max-brightness,
+# hide-infocard-suggestions
+excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e disable-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
