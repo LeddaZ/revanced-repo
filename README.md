@@ -11,9 +11,9 @@ By default this will build non-root ReVanced with these patches:
 - old-quality-layout
 - amoled
 - hide-watermark
-- hide-shorts-button
 - hide-autoplay-button
 - microg-support
+- swipe-controls
 
 You can modify the `build_revanced.sh` script to choose the patches you want.
 
