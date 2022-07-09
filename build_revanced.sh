@@ -72,11 +72,11 @@ mkdir -p build
 # codecs-unlock: Enables more audio codecs. Usually results in better audio quality but may depend on song and device. 
 # upgrade-button-remover: Remove the upgrade tab from the pivot bar in YouTube music. 
 # tasteBuilder-remover: Removes the "Tell us which artists you like" card from the Home screen. The same functionality can be triggered from the settings anyway.
-# swipe-controls: Volume and brightness swipe controls
+# fenster-swipe-controls: Volume and brightness swipe controls
 # wide-searchbar: Replaces the search-icon with a wide searchbar. This will hide the youtube logo when this is active.
 # autorepeat-by-default: Enables auto repeating of videos by default.
 
-excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e hide-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e wide-searchbar -e autorepeat-by-default -e swipe-controls"
+excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e hide-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e wide-searchbar -e autorepeat-by-default -e fenster-swipe-controls"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
