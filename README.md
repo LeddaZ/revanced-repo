@@ -13,7 +13,6 @@ By default this will build non-root ReVanced with these patches:
 - hide-watermark
 - hide-autoplay-button
 - microg-support
-- swipe-controls
 
 You can modify the `build_revanced.sh` script to choose the patches you want.
 

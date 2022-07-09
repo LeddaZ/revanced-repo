@@ -44,12 +44,39 @@ echo "*    Building YouTube ReVanced     *"
 echo "************************************"
 
 mkdir -p build
-# Available patches: premium-heading, disable-fullscreen-panels, disable-create-button, disable-shorts-button,
-# custom-playback-speed, seekbar-tapping, general-ads, video-ads, custom-branding, minimized-playback,
-# old-quality-layout, amoled, hide-cast-button, hide-watermark, microg-support, hdr-max-brightness,
-# hide-infocard-suggestions, enable-debugging, swipe-controls, minimized-playback-manager-fingerprint,
-# wide-searchbar, autorepeat-by-default
-excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e disable-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e hide-cast-button -e wide-searchbar -e autorepeat-by-default"
+
+# List of available patches and their descriptions
+# From revanced-patches 2.12.0 (LeddaZ's fork)
+
+# seekbar-tapping: Enable tapping on the seekbar of the YouTube player. 
+# general-ads: Remove general ads in bytecode. 
+# video-ads: Remove ads in the YouTube video player. 
+# hide-infocard-suggestions: Hides infocards in videos. 
+# custom-branding: Change the branding of YouTube. 
+# premium-heading: Show the premium branding on the the YouTube home screen. 
+# minimized-playback: Enable minimized and background playback. 
+# disable-fullscreen-panels: Disable comments panel in fullscreen view. 
+# old-quality-layout: Enable the original quality flyout menu. 
+# hide-autoplay-button: Disable the autoplay button. 
+# disable-create-button: Disable the create button. 
+# amoled: Enables pure black theme. 
+# hide-shorts-button: Hide the shorts button. 
+# hide-cast-button: Hide the cast button. 
+# hide-watermark: Hide the creator's watermark on video's. 
+# microg-support: Allow YouTube ReVanced to run without root and under a different package name. 
+# custom-playback-speed: Allows to change the default playback speed options. 
+# hdr-max-brightness: Set brightness to max for HDR videos in fullscreen mode. 
+# enable-debugging: Enable app debugging by patching the manifest file 
+# background-play: Enable playing music in the background. 
+# exclusive-audio-playback: Add the option to play music without video. 
+# codecs-unlock: Enables more audio codecs. Usually results in better audio quality but may depend on song and device. 
+# upgrade-button-remover: Remove the upgrade tab from the pivot bar in YouTube music. 
+# tasteBuilder-remover: Removes the "Tell us which artists you like" card from the Home screen. The same functionality can be triggered from the settings anyway.
+# swipe-controls: Volume and brightness swipe controls
+# wide-searchbar: Replaces the search-icon with a wide searchbar. This will hide the youtube logo when this is active.
+# autorepeat-by-default: Enables auto repeating of videos by default.
+
+excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e hide-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e wide-searchbar -e autorepeat-by-default -e swipe-controls"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
