@@ -50,6 +50,7 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "17.25.34"
           title: "Release ${{ env.date_now }}"
+          prerelease: false
           files: |
             build/SHA-256.txt
             build/*signed*.apk
