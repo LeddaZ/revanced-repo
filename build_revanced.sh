@@ -48,8 +48,8 @@ mkdir -p build
 # custom-playback-speed, seekbar-tapping, general-ads, video-ads, custom-branding, minimized-playback,
 # old-quality-layout, amoled, hide-cast-button, hide-watermark, microg-support, hdr-max-brightness,
 # hide-infocard-suggestions, enable-debugging, swipe-controls, minimized-playback-manager-fingerprint,
-# wide-searchbar
-excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e disable-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e hide-cast-button -e wide-searchbar"
+# wide-searchbar, autorepeat-by-default
+excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e disable-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e hide-cast-button -e wide-searchbar -e autorepeat-by-default"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
