@@ -1,9 +1,9 @@
 {
-  "latestReVancedVersion": "17.25.34",
-  "latestReVancedHash": "6113a5594f34bfd877d968f538373e7b50e62c1e9e322a55bf08640bb1374687",
+  "latestReVancedVersion": "17.26.35",
+  "latestReVancedHash": "7613fdbcbd8b92d672e0c2b877cf7709441f0482eca0982e9748153f772e6bc3",
   "latestMicroGVersion": "0.2.24.220220",
   "latestAppVersion": "1.1.4",
-  "downloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.25.34/revanced-nonroot-signed.apk",
-  "microGDownloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.25.34/vanced-microG.apk",
+  "downloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.26.35/revanced-nonroot-signed.apk",
+  "microGDownloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/17.26.35/vanced-microG.apk",
   "appDownloadUrl": "https://github.com/LeddaZ/ReVancedUpdater/releases/download/1.1.4/app-release.apk"
 }
