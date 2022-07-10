@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Latest compatible versions of APKs
-# YouTube 17.25.34
+# YouTube 17.26.35
 # Vanced microG 0.2.24.220220
 
-YT_VERSION="17.25.34"
+YT_VERSION="17.26.35"
 VMG_VERSION="0.2.24.220220"
 
 # Artifacts associative array aka dictionary
@@ -45,38 +45,10 @@ echo "************************************"
 
 mkdir -p build
 
-# List of available patches and their descriptions
-# From revanced-patches 2.12.0 (LeddaZ's fork)
+# A list of available patches and their descriptions can be found here:
+# https://github.com/LeddaZ/revanced-patches
 
-# seekbar-tapping: Enable tapping on the seekbar of the YouTube player. 
-# general-ads: Remove general ads in bytecode. 
-# video-ads: Remove ads in the YouTube video player. 
-# hide-infocard-suggestions: Hides infocards in videos. 
-# custom-branding: Change the branding of YouTube. 
-# premium-heading: Show the premium branding on the the YouTube home screen. 
-# minimized-playback: Enable minimized and background playback. 
-# disable-fullscreen-panels: Disable comments panel in fullscreen view. 
-# old-quality-layout: Enable the original quality flyout menu. 
-# hide-autoplay-button: Disable the autoplay button. 
-# disable-create-button: Disable the create button. 
-# amoled: Enables pure black theme. 
-# hide-shorts-button: Hide the shorts button. 
-# hide-cast-button: Hide the cast button. 
-# hide-watermark: Hide the creator's watermark on video's. 
-# microg-support: Allow YouTube ReVanced to run without root and under a different package name. 
-# custom-playback-speed: Allows to change the default playback speed options. 
-# hdr-max-brightness: Set brightness to max for HDR videos in fullscreen mode. 
-# enable-debugging: Enable app debugging by patching the manifest file 
-# background-play: Enable playing music in the background. 
-# exclusive-audio-playback: Add the option to play music without video. 
-# codecs-unlock: Enables more audio codecs. Usually results in better audio quality but may depend on song and device. 
-# upgrade-button-remover: Remove the upgrade tab from the pivot bar in YouTube music. 
-# tasteBuilder-remover: Removes the "Tell us which artists you like" card from the Home screen. The same functionality can be triggered from the settings anyway.
-# fenster-swipe-controls: Volume and brightness swipe controls
-# wide-searchbar: Replaces the search-icon with a wide searchbar. This will hide the youtube logo when this is active.
-# autorepeat-by-default: Enables auto repeating of videos by default.
-
-excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e hide-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e wide-searchbar -e autorepeat-by-default -e fenster-swipe-controls"
+excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e hide-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e enable-wide-searchbar -e autorepeat-by-default -e fenster-swipe-controls"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
