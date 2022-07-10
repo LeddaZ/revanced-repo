@@ -48,7 +48,7 @@ mkdir -p build
 # A list of available patches and their descriptions can be found here:
 # https://github.com/LeddaZ/revanced-patches
 
-excluded_patches="-e background-play -e exclusive-audio-playback -e codecs-unlock -e upgrade-button-remover -e disable-create-button -e premium-heading -e hide-shorts-button -e disable-fullscreen-panels -e tasteBuilder-remover -e hide-cast-button -e hdr-max-brightness -e hide-infocard-suggestions -e enable-debugging -e enable-wide-searchbar -e autorepeat-by-default -e fenster-swipe-controls"
+excluded_patches="-e autorepeat-by-default -e background-play -e codecs-unlock -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e exclusive-audio-playback -e fenster-swipe-controls -e hdr-max-brightness -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e premium-heading -e tasteBuilder-remover -e upgrade-button-remover"
 
 if [ -f "com.google.android.youtube.apk" ]
 then

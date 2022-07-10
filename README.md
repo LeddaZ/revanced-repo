@@ -2,17 +2,17 @@
 This repo template will allow you to build non-root ReVanced using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 By default this will build non-root ReVanced with these patches:
 
-- custom-playback-speed
-- seekbar-tapping
-- general-ads
-- video-ads
+- amoled
 - custom-branding
+- custom-playback-speed
+- general-ads
+- hide-autoplay-button
+- hide-watermark
+- microg-support
 - minimized-playback
 - old-quality-layout
-- amoled
-- hide-watermark
-- hide-autoplay-button
-- microg-support
+- seekbar-tapping
+- video-ads
 
 You can modify the `build_revanced.sh` script to choose the patches you want.
 
