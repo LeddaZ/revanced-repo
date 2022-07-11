@@ -12,6 +12,7 @@ By default this will build non-root ReVanced with these patches:
 - minimized-playback
 - old-quality-layout
 - seekbar-tapping
+- swipe-controls
 - video-ads
 
 You can modify the `build_revanced.sh` script to choose the patches you want.
