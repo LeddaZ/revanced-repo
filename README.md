@@ -10,6 +10,7 @@ By default this will build non-root ReVanced with these patches:
 - hide-watermark
 - microg-support
 - minimized-playback
+- return-youtube-dislike
 - seekbar-tapping
 - swipe-controls
 - video-ads
