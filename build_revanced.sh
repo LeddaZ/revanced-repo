@@ -48,12 +48,12 @@ mkdir -p build
 # A list of available patches and their descriptions can be found here:
 # https://github.com/LeddaZ/revanced-patches
 
-excluded_patches="-e autorepeat-by-default -e background-play -e codecs-unlock -e compact-header -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e exclusive-audio-playback -e force-vp9-codec -e hdr-max-brightness -e hide-cast-button -e hide-get-premium -e hide-infocard-suggestions -e hide-shorts-button -e minimized-playback-music -e music-video-ads -e premium-heading -e sponsorblock -e tasteBuilder-remover -e upgrade-button-remover"
+patches="-e always-autorepeat -e autorepeat-by-default -e background-play -e codecs-unlock -e compact-header -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e exclusive-audio-playback -e force-vp9-codec -e hdr-max-brightness -e hide-cast-button -e hide-get-premium -e hide-infocard-suggestions -e hide-shorts-button -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e sponsorblock -e tasteBuilder-remover -e upgrade-button-remover -i swipe-controls"
 
 if [ -f "com.google.android.youtube.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               $excluded_patches \
+                               $patches \
                                -a com.google.android.youtube.apk -o build/revanced-nonroot.apk
 else
     echo "Cannot find YouTube APK, skipping build"

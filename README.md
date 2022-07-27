@@ -11,12 +11,13 @@ By default this will build non-root ReVanced with these patches:
 - microg-support
 - minimized-playback
 - old-quality-layout
+- remember-video-quality
 - return-youtube-dislike
 - seekbar-tapping
 - swipe-controls
 - video-ads
 
-You can modify the `build_revanced.sh` script to choose the patches you want.
+You can modify the `build_revanced.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/LeddaZ/revanced-patches).
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
