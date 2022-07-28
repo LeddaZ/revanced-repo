@@ -4,9 +4,9 @@
   "latestReVancedMusicVersion": "5.16.51",
   "latestReVancedMusicHash": "ed5ea8e1f2f781113dff003b331408aa3e1ef1c9e5afa0ad837dbb573e7045fc",
   "latestMicroGVersion": "0.2.24.220220",
-  "latestAppVersion": "1.1.4",
+  "latestAppVersion": "1.2.0",
   "downloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/20220728/revanced-nonroot-signed.apk",
   "musicDownloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/20220728/revanced-music-nonroot-signed.apk",
   "microGDownloadUrl": "https://github.com/LeddaZ/revanced-repo/releases/download/20220728/vanced-microG.apk",
-  "appDownloadUrl": "https://github.com/LeddaZ/ReVancedUpdater/releases/download/1.1.4/app-release.apk"
+  "appDownloadUrl": "https://github.com/LeddaZ/ReVancedUpdater/releases/download/1.2.0/app-release.apk"
 }
