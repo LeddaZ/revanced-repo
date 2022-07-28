@@ -2,6 +2,7 @@
 
 # Latest compatible versions of APKs
 # YouTube 17.26.35
+# YouTube Music 5.16.51
 # Vanced microG 0.2.24.220220
 
 YT_VERSION="17.26.35"
@@ -39,22 +40,37 @@ if [ ! -f "vanced-microG.apk" ]; then
     mv com.mgoogle.android.gms@$VMG_VERSION.apk vanced-microG.apk
 fi
 
-echo "************************************"
-echo "*    Building YouTube ReVanced     *"
-echo "************************************"
-
 mkdir -p build
 
 # A list of available patches and their descriptions can be found here:
 # https://github.com/LeddaZ/revanced-patches
 
-patches="-e always-autorepeat -e autorepeat-by-default -e background-play -e codecs-unlock -e compact-header -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e exclusive-audio-playback -e force-vp9-codec -e hdr-max-brightness -e hide-cast-button -e hide-get-premium -e hide-infocard-suggestions -e hide-shorts-button -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e sponsorblock -e tasteBuilder-remover -e upgrade-button-remover -i swipe-controls"
+echo "************************************"
+echo "*    Building YouTube ReVanced     *"
+echo "************************************"
 
-if [ -f "com.google.android.youtube.apk" ]
+yt_patches="-e always-autorepeat -e autorepeat-by-default -e background-play -e codecs-unlock -e compact-header -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e exclusive-audio-playback -e force-vp9-codec -e hdr-auto-brightness -e hide-cast-button -e hide-get-premium -e hide-infocard-suggestions -e hide-shorts-button -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e sponsorblock -e tasteBuilder-remover -e upgrade-button-remover -i swipe-controls"
+
+if [ -f "youtube.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               $patches \
-                               -a com.google.android.youtube.apk -o build/revanced-nonroot.apk
+                               $yt_patches \
+                               -a youtube.apk -o build/revanced-nonroot.apk
 else
     echo "Cannot find YouTube APK, skipping build"
+fi
+
+echo "************************************"
+echo "*     Building ReVanced Music      *"
+echo "************************************"
+
+ytm_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e compact-header -e custom-branding -e custom-playback-speed -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e force-vp9-codec -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e sponsorblock -e swipe-controls -e video-ads"
+
+if [ -f "music.apk" ]
+then
+    java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
+                               $ytm_patches \
+                               -a music.apk -o build/revanced-music-nonroot.apk
+else
+    echo "Cannot find YouTube Music APK, skipping build"
 fi
