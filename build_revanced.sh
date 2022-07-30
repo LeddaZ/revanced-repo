@@ -51,7 +51,7 @@ echo "************************************"
 echo "*    Building YouTube ReVanced     *"
 echo "************************************"
 
-yt_excluded_patches="-e always-autorepeat -e autorepeat-by-default -e background-play -e codecs-unlock -e compact-header -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e exclusive-audio-playback -e force-vp9-codec -e hide-cast-button -e hide-get-premium -e hide-infocard-suggestions -e hide-shorts-button -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e sponsorblock -e tasteBuilder-remover -e upgrade-button-remover"
+yt_excluded_patches="-e always-autorepeat -e autorepeat-by-default -e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e exclusive-audio-playback -e force-vp9-codec -e hide-cast-button -e hide-get-premium -e hide-infocard-suggestions -e hide-shorts-button -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e sponsorblock -e tasteBuilder-remover -e upgrade-button-remover"
 yt_included_patches="-i hdr-auto-brightness -i swipe-controls"
 
 if [ -f "youtube.apk" ]
