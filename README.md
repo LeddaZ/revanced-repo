@@ -6,6 +6,7 @@ By default this will build non-root ReVanced with these patches:
 - custom-branding
 - custom-playback-speed
 - general-ads
+- hdr-auto-brightness
 - hide-autoplay-button
 - hide-watermark
 - microg-support
