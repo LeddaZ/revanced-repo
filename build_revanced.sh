@@ -45,6 +45,8 @@ mkdir -p build
 # A list of available patches and their descriptions can be found here:
 # https://github.com/LeddaZ/revanced-patches
 
+non_yt_ytm_patches="-e general-reddit-ads -e timeline-ads"
+
 echo "************************************"
 echo "*    Building YouTube ReVanced     *"
 echo "************************************"
@@ -55,7 +57,7 @@ yt_included_patches="-i hdr-auto-brightness -i swipe-controls"
 if [ -f "youtube.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               $yt_excluded_patches $yt_included_patches \
+                               $yt_excluded_patches $yt_included_patches $non_yt_ytm_patches \
                                -a youtube.apk -o build/revanced-nonroot.apk
 else
     echo "Cannot find YouTube APK, skipping build"
@@ -71,7 +73,7 @@ echo "Building arm architecture..."
 if [ -f "music-arm.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               $ytm_excluded_patches \
+                               $ytm_excluded_patches $non_yt_ytm_patches \
                                -a music-arm.apk -o build/revanced-music-nonroot-arm.apk
 else
     echo "Cannot find YouTube Music arm APK, skipping build"
@@ -81,7 +83,7 @@ echo "Building arm64 architecture..."
 if [ -f "music-arm64.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               $ytm_excluded_patches \
+                               $ytm_excluded_patches $non_yt_ytm_patches \
                                -a music-arm64.apk -o build/revanced-music-nonroot-arm64.apk
 else
     echo "Cannot find YouTube Music arm64 APK, skipping build"
@@ -91,7 +93,7 @@ echo "Building x86 architecture..."
 if [ -f "music-x86.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               $ytm_excluded_patches \
+                               $ytm_excluded_patches $non_yt_ytm_patches \
                                -a music-x86.apk -o build/revanced-music-nonroot-x86.apk
 else
     echo "Cannot find YouTube Music x86 APK, skipping build"
@@ -101,7 +103,7 @@ echo "Building x86_64 architecture..."
 if [ -f "music-x86_64.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                               $ytm_excluded_patches \
+                               $ytm_excluded_patches $non_yt_ytm_patches \
                                -a music-x86_64.apk -o build/revanced-music-nonroot-x86_64.apk
 else
     echo "Cannot find YouTube Music x86_64 APK, skipping build"
