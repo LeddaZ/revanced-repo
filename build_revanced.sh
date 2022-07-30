@@ -67,6 +67,7 @@ echo "************************************"
 
 ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e compact-header -e custom-branding -e custom-playback-speed -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e force-vp9-codec -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e sponsorblock -e swipe-controls -e video-ads"
 
+echo "Building arm architecture..."
 if [ -f "music-arm.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
@@ -76,6 +77,7 @@ else
     echo "Cannot find YouTube Music arm APK, skipping build"
 fi
 
+echo "Building arm64 architecture..."
 if [ -f "music-arm64.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
@@ -85,6 +87,7 @@ else
     echo "Cannot find YouTube Music arm64 APK, skipping build"
 fi
 
+echo "Building x86 architecture..."
 if [ -f "music-x86.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
@@ -94,6 +97,7 @@ else
     echo "Cannot find YouTube Music x86 APK, skipping build"
 fi
 
+echo "Building x86_64 architecture..."
 if [ -f "music-x86_64.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
