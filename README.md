@@ -37,7 +37,7 @@ You can modify the `build_revanced.sh` script to choose the patches you want. A 
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
 2. Download latest (compatible) APKs from APKMirror.com:
      - [YouTube 17.29.34](https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-29-34-release/), rename to `youtube.apk`
-     - [YouTube Music 5.16.51](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-16-51-release/), rename to `music.apk`; APKs published here are arm64 only, since YTM doesn't have a single APK for all architectures
+     - [YouTube Music 5.16.51](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-16-51-release/), rename to `music-arm.apk`, `music-arm64.apk`, `music-x86.apk` or `music-x86_64.apk` depending on the architecture
 3. Publish a new release under tag `base` and upload the APKs to the release. ([Step 1](images/release_1.png), [Step 2](images/release_2.png))
 4. [Set up signing](signing.md) (if you don't want to, you can remove the signing part in `.github/workflows/main.yml`)
 

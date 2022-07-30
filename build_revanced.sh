@@ -67,11 +67,38 @@ echo "************************************"
 
 ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e compact-header -e custom-branding -e custom-playback-speed -e disable-create-button -e disable-fullscreen-panels -e enable-debugging -e enable-wide-searchbar -e force-vp9-codec -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e sponsorblock -e swipe-controls -e video-ads"
 
-if [ -f "music.apk" ]
+if [ -f "music-arm.apk" ]
 then
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
                                $ytm_excluded_patches \
-                               -a music.apk -o build/revanced-music-nonroot.apk
+                               -a music-arm.apk -o build/revanced-music-nonroot-arm.apk
 else
-    echo "Cannot find YouTube Music APK, skipping build"
+    echo "Cannot find YouTube Music arm APK, skipping build"
+fi
+
+if [ -f "music-arm64.apk" ]
+then
+    java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
+                               $ytm_excluded_patches \
+                               -a music-arm64.apk -o build/revanced-music-nonroot-arm64.apk
+else
+    echo "Cannot find YouTube Music arm64 APK, skipping build"
+fi
+
+if [ -f "music-x86.apk" ]
+then
+    java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
+                               $ytm_excluded_patches \
+                               -a music-x86.apk -o build/revanced-music-nonroot-x86.apk
+else
+    echo "Cannot find YouTube Music x86 APK, skipping build"
+fi
+
+if [ -f "music-x86_64.apk" ]
+then
+    java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
+                               $ytm_excluded_patches \
+                               -a music-x86_64.apk -o build/revanced-music-nonroot-x86_64.apk
+else
+    echo "Cannot find YouTube Music x86_64 APK, skipping build"
 fi
