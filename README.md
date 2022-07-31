@@ -1,9 +1,9 @@
 # ReVanced Repo
 This repo template will allow you to build non-root ReVanced and ReVanced Music using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
-By default this will build non-root ReVanced with these patches: `amoled`, `custom-branding`, `custom-playback-speed`, `general-ads`, `hdr-auto-brightness`, `hide-autoplay-button`, `hide-watermark`, `microg-support`, `minimized-playback`, `old-quality-layout`, `remember-video-quality`, `return-youtube-dislike`, `seekbar-tapping`, `settings`, `sponsorblock`, `swipe-controls`, `video-ads`
+By default this will build non-root ReVanced with all patches, they can be configured (or disabled) from the ReVanced settings menu in the app.
 
-ReVanced Music will be built with these patches: `background-play`, `codecs-unlock`, `custom-music-branding`, `exclusive-audio-playback`, `hide-get-premium`, `minimized-playback-music`, `music-microg-support`, `music-video-ads`, `tasteBuilder-remover`, `upgrade-button-remover`
+ReVanced Music will be built with these patches: `background-play`, `codecs-unlock`, `custom-music-branding`, `exclusive-audio-playback`, `hide-get-premium`, `minimized-playback-music`, `music-microg-support`, `music-video-ads`, `tasteBuilder-remover`, `upgrade-button-remover`.
 
 You can modify the `build_revanced.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/LeddaZ/revanced-patches).
 
