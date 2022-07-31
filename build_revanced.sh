@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# Latest compatible versions of APKs
-# YouTube 17.26.35
+# Latest compatible versions of APKs:
+# YouTube 17.29.34
 # YouTube Music 5.16.51
 # Vanced microG 0.2.24.220220
 
-YT_VERSION="17.26.35"
 VMG_VERSION="0.2.24.220220"
 
 # Artifacts associative array aka dictionary
