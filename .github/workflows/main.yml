@@ -56,9 +56,5 @@ jobs:
           prerelease: false
           files: |
             build/SHA-256.txt
-            build/revanced-nonroot-signed.apk
-            build/revanced-music-nonroot-arm-signed.apk
-            build/revanced-music-nonroot-arm64-signed.apk
-            build/revanced-music-nonroot-x86-signed.apk
-            build/revanced-music-nonroot-x86_64-signed.apk
+            build/*signed.apk
             vanced-microG.apk
