@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 YT_VERSION="17-32-35"
 YTM_VERSION="5-17-51"
