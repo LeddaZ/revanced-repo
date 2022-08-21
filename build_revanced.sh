@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Latest compatible versions of APKs:
-# YouTube 17.29.34
+# YouTube 17.32.35
 # YouTube Music 5.17.51
 # Vanced microG 0.2.24.220220
 
@@ -50,7 +50,7 @@ echo "************************************"
 echo "*    Building YouTube ReVanced     *"
 echo "************************************"
 
-yt_excluded_patches="-e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e exclusive-audio-playback -e hide-get-premium -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e tasteBuilder-remover -e upgrade-button-remover"
+yt_excluded_patches="-e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e exclusive-audio-playback -e hide-autoplay-button -e hide-get-premium -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e tasteBuilder-remover -e upgrade-button-remover"
 yt_included_patches="-i enable-debugging"
 
 if [ -f "youtube.apk" ]
