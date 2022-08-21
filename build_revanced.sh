@@ -30,7 +30,7 @@ for artifact in "${!artifacts[@]}"; do
     fi
 done
 
-# Fetch microG
+# Fetch Vanced microG
 chmod +x apkeep
 
 if [ ! -f "vanced-microG.apk" ]; then

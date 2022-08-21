@@ -16,13 +16,8 @@ jobs:
           java-version: "17"
           distribution: "adopt"
 
-      - name: Download stored base APKs
-        uses: robinraju/release-downloader@v1.3
-        with:
-          repository: ${{ github.repository }}
-          tag: 'base'
-          fileName: "*"
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Download base APKs
+        run: ./download_apkmirror.sh
 
       - name: Build APKs
         run: ./build_revanced.sh
