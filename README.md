@@ -1,7 +1,7 @@
 # ReVanced Repo
 This repo template will allow you to build non-root ReVanced and ReVanced Music using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
-By default this will build non-root ReVanced with all patches except `hide-autoplay-button` and `premium-heading`, they can be configured (or disabled) from the ReVanced settings menu in the app.
+By default this will build non-root ReVanced with all patches except `premium-heading`, they can be configured (or disabled) from the ReVanced settings menu in the app.
 
 ReVanced Music will be built with these patches: `background-play`, `codecs-unlock`, `custom-music-branding`, `exclusive-audio-playback`, `hide-get-premium`, `minimized-playback-music`, `music-microg-support`, `music-video-ads`, `upgrade-button-remover`.
 
