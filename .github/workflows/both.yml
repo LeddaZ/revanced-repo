@@ -65,4 +65,3 @@ jobs:
           files: |
             build/SHA-256-ytm.txt
             build/revanced-music-nonroot-*-signed.apk
-            vanced-microG.apk
