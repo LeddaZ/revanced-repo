@@ -41,7 +41,7 @@ jobs:
           BUILD_TOOLS_VERSION: "30.0.2"     
           
       - name: Generate SHA256 checksums for the signed APK files
-        run: ./scripts/sha256gen.sh
+        run: ./scripts/sha256gen.sh -r
       
       - uses: marvinpinto/action-automatic-releases@latest
         name: Release ReVanced
@@ -51,6 +51,6 @@ jobs:
           title: "ReVanced ${{ env.date_now }}"
           prerelease: false
           files: |
-            build/SHA-256.txt
+            build/SHA-256-yt.txt
             build/revanced-nonroot-signed.apk
             vanced-microG.apk
