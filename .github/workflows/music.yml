@@ -44,12 +44,13 @@ jobs:
         run: ./scripts/sha256gen.sh
       
       - uses: marvinpinto/action-automatic-releases@latest
+      - name: Release ReVanced Music
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "${{ env.date_now_nodashes }}"
-          title: "Release ${{ env.date_now }}"
+          automatic_release_tag: "${{ env.date_now_nodashes }}-ytm"
+          title: "ReVanced Music ${{ env.date_now }}"
           prerelease: false
           files: |
             build/SHA-256.txt
-            build/*signed.apk
+            build/revanced-music-nonroot-*-signed.apk
             vanced-microG.apk
