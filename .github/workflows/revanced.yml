@@ -44,7 +44,7 @@ jobs:
         run: ./scripts/sha256gen.sh
       
       - uses: marvinpinto/action-automatic-releases@latest
-      - name: Release ReVanced
+        name: Release ReVanced
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "${{ env.date_now_nodashes }}-yt"
