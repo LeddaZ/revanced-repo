@@ -81,7 +81,7 @@ if [ "$music" = 'yes' ]; then
     echo "*     Building ReVanced Music      *"
     echo "************************************"
 
-    ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e compact-header -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-create-button -e disable-fullscreen-panels -e download -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e tasteBuilder-remover -e video-ads"
+    ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e client-spoof -e compact-header -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-create-button -e disable-fullscreen-panels -e download -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e tasteBuilder-remover -e video-ads"
 
     echo "Building arm architecture..."
     if [ -f "music-arm.apk" ]
