@@ -2,7 +2,7 @@
 
 music=no
 revanced=no
-while getopts m:r: flag
+while getopts mr flag
 do
     case "${flag}" in
         m) music=yes;;
