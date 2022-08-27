@@ -1,3 +1,4 @@
 # ReVanced changelog
 
-Empty for now.
+## 20220827
+- Added client-spoof patch
