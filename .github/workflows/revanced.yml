@@ -1,0 +1,55 @@
+name: ReVanced
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup JDK
+        uses: actions/setup-java@v3.3.0
+        with:
+          java-version: "17"
+          distribution: "adopt"
+
+      - name: Download base APK
+        run: ./scripts/revanced/download.sh
+
+      - name: Build APK
+        run: ./scripts/revanced/build.sh
+              
+      - name: Set current date as env variable
+        run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Set current date without dashes as env variable
+        run: echo "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
+
+      - uses: r0adkll/sign-android-release@v1
+        name: Sign APKs
+        with:
+          releaseDirectory: build
+          signingKeyBase64: '${{ secrets.SIGNING_KEY }}'
+          output: build/release/signed
+          alias: '${{ secrets.ALIAS }}'
+          keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
+          keyPassword: '${{ secrets.KEY_PASSWORD }}'
+        env:
+          BUILD_TOOLS_VERSION: "30.0.2"     
+          
+      - name: Generate SHA256 checksums for the signed APK files
+        run: ./scripts/sha256gen.sh
+      
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ env.date_now_nodashes }}"
+          title: "Release ${{ env.date_now }}"
+          prerelease: false
+          files: |
+            build/SHA-256.txt
+            build/*signed.apk
+            vanced-microG.apk

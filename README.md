@@ -12,6 +12,6 @@ You can modify the `build_revanced.sh` script to choose the patches you want. A 
 2. [Set up signing](signing.md) (if you don't want to, you can remove the signing part in `.github/workflows/main.yml`)
 
 ## How to build
-1. Go to Actions -> All workflows -> ReVanced Build ([Example](images/workflow_run.png))
+1. Go to Actions -> All workflows -> Choose what you want to build ([Example](images/workflow_run.png))
 2. Run the workflow
 3. Download the APKs from the latest release ([Example](images/build_release.png))

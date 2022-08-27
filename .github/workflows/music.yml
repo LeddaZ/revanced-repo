@@ -1,4 +1,4 @@
-name: ReVanced Build
+name: ReVanced Music
 
 on:
   workflow_dispatch:
@@ -17,10 +17,10 @@ jobs:
           distribution: "adopt"
 
       - name: Download base APKs
-        run: ./download_apkmirror.sh
+        run: ./scripts/music/download.sh
 
       - name: Build APKs
-        run: ./build_revanced.sh
+        run: ./scripts/music/build.sh
               
       - name: Set current date as env variable
         run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
@@ -41,7 +41,7 @@ jobs:
           BUILD_TOOLS_VERSION: "30.0.2"     
           
       - name: Generate SHA256 checksums for the signed APK files
-        run: ./generate-SHA256sum.sh
+        run: ./scripts/sha256gen.sh
       
       - uses: marvinpinto/action-automatic-releases@latest
         with:
