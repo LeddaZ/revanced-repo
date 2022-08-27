@@ -17,10 +17,10 @@ jobs:
           distribution: "adopt"
 
       - name: Download base APKs
-        run: ./scripts/both/download.sh -m -r
+        run: ./scripts/download.sh -m -r
 
       - name: Build APKs
-        run: ./scripts/both/build.sh -m -r
+        run: ./scripts/build.sh -m -r
               
       - name: Set current date as env variable
         run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
