@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Latest compatible versions of APKs:
-# YouTube 17.32.35
-# YouTube Music 5.17.51
+# YouTube 17.33.42
+# YouTube Music 5.21.52
 # Vanced microG 0.2.24.220220
 
 music=no
