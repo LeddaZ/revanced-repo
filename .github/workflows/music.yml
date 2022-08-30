@@ -23,10 +23,7 @@ jobs:
         run: ./scripts/build.sh -m
               
       - name: Set current date as env variable
-        run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
-
-      - name: Set current date without dashes as env variable
-        run: echo "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
+        run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV && echo "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
       - uses: r0adkll/sign-android-release@v1
         name: Sign APKs
