@@ -26,7 +26,7 @@ jobs:
         run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV && echo "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
       - uses: r0adkll/sign-android-release@v1
-        name: Sign APKs
+        name: Sign APK
         with:
           releaseDirectory: build
           signingKeyBase64: '${{ secrets.SIGNING_KEY }}'
@@ -37,7 +37,7 @@ jobs:
         env:
           BUILD_TOOLS_VERSION: "30.0.2"     
           
-      - name: Generate SHA256 checksums for the signed APK files
+      - name: Generate SHA256 checksums for the signed APK file
         run: ./scripts/sha256gen.sh -r
       
       - uses: marvinpinto/action-automatic-releases@latest
