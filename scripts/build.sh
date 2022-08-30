@@ -54,7 +54,7 @@ mkdir -p build
 # A list of available patches and their descriptions can be found here:
 # https://github.com/LeddaZ/revanced-patches
 
-non_yt_ytm_patches="-e general-reddit-ads -e pflotsh-ecmwf-subscription-unlock -e promo-code-unlock -e tiktok-ads -e timeline-ads"
+non_yt_ytm_patches="-e general-reddit-ads -e pflotsh-ecmwf-subscription-unlock -e premium-icon-reddit -e promo-code-unlock -e tiktok-ads -e timeline-ads"
 
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
