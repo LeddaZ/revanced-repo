@@ -3,7 +3,7 @@ This repo template will allow you to build non-root ReVanced and ReVanced Music 
 
 By default this will build non-root ReVanced with all patches except `premium-heading`, they can be configured (or disabled) from the ReVanced settings menu in the app.
 
-ReVanced Music will be built with these patches: `background-play`, `codecs-unlock`, `custom-music-branding`, `exclusive-audio-playback`, `hide-get-premium`, `minimized-playback-music`, `music-microg-support`, `music-video-ads`, `upgrade-button-remover`.
+ReVanced Music will be built with these patches: `background-play`, `codecs-unlock`, `compact-header`, `custom-music-branding`, `exclusive-audio-playback`, `hide-get-premium`, `minimized-playback-music`, `music-microg-support`, `music-video-ads`, `tasteBuilder-remover`, `upgrade-button-remover`.
 
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/LeddaZ/revanced-patches).
 
