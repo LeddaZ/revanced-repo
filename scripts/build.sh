@@ -83,7 +83,7 @@ if [ "$music" = 'yes' ]; then
     echo "*     Building ReVanced Music      *"
     echo "************************************"
 
-    ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e client-spoof -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-create-button -e disable-fullscreen-panels -e download -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e video-ads"
+    ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e client-spoof -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-create-button -e disable-fullscreen-panels -e downloads -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e video-ads"
 
     echo -e "\n"
     echo "=== Building arm APK ==="
