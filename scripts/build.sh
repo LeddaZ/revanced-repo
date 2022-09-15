@@ -2,7 +2,7 @@
 
 # Latest compatible versions of APKs:
 # YouTube 17.33.42
-# YouTube Music 5.22.54
+# YouTube Music 5.23.50
 # Vanced microG 0.2.24.220220
 
 music=no
@@ -79,7 +79,7 @@ if [ "$music" = 'yes' ]; then
     echo "*     Building ReVanced Music      *"
     echo "************************************"
 
-    ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e client-spoof -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-create-button -e disable-fullscreen-panels -e downloads -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e theme -e video-ads"
+    ytm_excluded_patches="-e always-autorepeat -e amoled -e autorepeat-by-default -e client-spoof -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-auto-captions -e disable-create-button -e disable-fullscreen-panels -e downloads -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-infocard-suggestions -e hide-shorts-button -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e theme -e video-ads"
 
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
