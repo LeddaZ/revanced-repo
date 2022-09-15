@@ -1,5 +1,9 @@
 # ReVanced changelog
 
+## 2022-09-15
+- Removed `amoled` patch since it's been deprecated by `theme`
+- Added `disable-auto-captions` patch
+
 ## 2022-09-03
 - Fixed download button color
 
