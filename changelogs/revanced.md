@@ -1,5 +1,8 @@
 # ReVanced changelog
 
+## 2022-09-17
+- Completely removed `amoled` from patches
+
 ## 2022-09-15
 - Removed `amoled` patch since it's been deprecated by `theme`
 - Added `disable-auto-captions` patch
