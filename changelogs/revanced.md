@@ -1,5 +1,8 @@
 # ReVanced changelog
 
+## 2022-09-19
+- Updated base to 17.36.37
+
 ## 2022-09-17
 - Completely removed `amoled` from patches
 
