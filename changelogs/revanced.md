@@ -1,5 +1,10 @@
 # ReVanced changelog
 
+## 2022-09-25
+- Added `disable-auto-player-popup-panels` and `hide-time-and-seekbar` patches
+- `custom-playback-speed`: max, min, granularity option
+- Option to disable sponsorblock on shorts
+
 ## 2022-09-19
 - Updated base to 17.36.37
 
