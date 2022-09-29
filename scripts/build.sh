@@ -2,7 +2,7 @@
 
 # Latest compatible versions of APKs:
 # YouTube 17.36.37
-# YouTube Music 5.23.50
+# YouTube Music 5.25.51
 # Vanced microG 0.2.24.220220
 
 music=no
