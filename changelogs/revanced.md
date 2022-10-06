@@ -1,5 +1,8 @@
 # ReVanced changelog
 
+## 2022-10-06
+- Added `disable-startup-shorts-player` and `hide-video-buttons` patches
+
 ## 2022-09-25
 - Added `disable-auto-player-popup-panels` and `hide-time-and-seekbar` patches
 - `custom-playback-speed`: max, min, granularity option
