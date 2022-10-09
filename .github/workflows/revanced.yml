@@ -49,5 +49,5 @@ jobs:
           prerelease: false
           files: |
             build/SHA-256-yt.txt
-            build/revanced-nonroot-signed.apk
+            build/revanced-nonroot*-signed.apk
             vanced-microG.apk

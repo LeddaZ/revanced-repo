@@ -67,6 +67,12 @@ if [ "$revanced" = 'yes' ]; then
                                 $yt_excluded_patches $yt_included_patches \
                                 -a youtube.apk -o build/revanced-nonroot.apk
         echo "YouTube ReVanced build finished"
+
+        java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
+                                $yt_excluded_patches -e theme $yt_included_patches \
+                                -a youtube.apk -o build/revanced-nonroot-stocktheme.apk
+        
+        echo "YouTube ReVanced (stock theme) build finished"
     else
         echo "Cannot find YouTube APK, skipping build"
     fi
