@@ -43,10 +43,12 @@ done
 # Fetch Vanced microG
 chmod +x apkeep
 
-if [ ! -f "vanced-microG.apk" ]; then
-    echo "Downloading Vanced microG"
-    ./apkeep -a com.mgoogle.android.gms@$VMG_VERSION .
-    mv com.mgoogle.android.gms@$VMG_VERSION.apk vanced-microG.apk
+if [ "$revanced" = 'yes' ]; then
+    if [ ! -f "vanced-microG.apk" ]; then
+        echo "Downloading Vanced microG"
+        ./apkeep -a com.mgoogle.android.gms@$VMG_VERSION .
+        mv com.mgoogle.android.gms@$VMG_VERSION.apk vanced-microG.apk
+    fi
 fi
 
 mkdir -p build
