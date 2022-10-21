@@ -1,5 +1,9 @@
 # ReVanced changelog
 
+## 2022-10-21
+- Added two new patches: `hide-my-mix` (removes mix playlists from the feed) and `hide-captions-button` (hides the captions button on video player)
+- Various fixes and improvements to other patches
+
 ## 2022-10-06
 - Added `disable-startup-shorts-player` and `hide-video-buttons` patches
 
