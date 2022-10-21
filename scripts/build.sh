@@ -2,7 +2,7 @@
 
 # Latest compatible versions of APKs:
 # YouTube 17.36.37
-# YouTube Music 5.26.52
+# YouTube Music 5.29.52
 # Vanced microG 0.2.24.220220
 
 music=no
@@ -79,7 +79,7 @@ if [ "$music" = 'yes' ]; then
     echo "*     Building ReVanced Music      *"
     echo "************************************"
 
-    ytm_excluded_patches="-e always-autorepeat -e autorepeat-by-default -e client-spoof -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-auto-captions -e disable-auto-player-popup-panels -e disable-create-button -e disable-fullscreen-panels -e disable-startup-shorts-player -e downloads -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-cast-button -e hide-create-button -e hide-email-address -e hide-infocard-suggestions -e hide-shorts-button -e hide-time-and-seekbar -e hide-video-buttons -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e theme -e video-ads"
+    ytm_excluded_patches="-e always-autorepeat -e autorepeat-by-default -e client-spoof -e custom-branding -e custom-playback-speed -e custom-video-buffer -e disable-auto-captions -e disable-auto-player-popup-panels -e disable-create-button -e disable-fullscreen-panels -e disable-startup-shorts-player -e downloads -e enable-debugging -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-autoplay-button -e hide-captions-button -e hide-cast-button -e hide-create-button -e hide-email-address -e hide-infocard-suggestions -e hide-mix-playlists -e hide-shorts-button -e hide-time-and-seekbar -e hide-video-buttons -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e theme -e video-ads"
 
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then

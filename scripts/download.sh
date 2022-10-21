@@ -11,7 +11,7 @@ do
 done
 
 YT_VERSION="17-36-37"
-YTM_VERSION="5-26-52"
+YTM_VERSION="5-29-52"
 
 declare -A apks
 
