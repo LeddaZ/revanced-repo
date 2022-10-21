@@ -2,6 +2,7 @@
 
 ## 2022-10-21
 - Added two new patches: `hide-my-mix` (removes mix playlists from the feed) and `hide-captions-button` (hides the captions button on video player)
+- Temporarily excluded `hide-create-button` patch (conflicts with `hide-shorts-button` and makes the app crash)
 - Various fixes and improvements to other patches
 
 ## 2022-10-06
