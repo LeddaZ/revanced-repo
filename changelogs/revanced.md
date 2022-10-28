@@ -1,5 +1,11 @@
 # ReVanced changelog
 
+## 2022-10-28
+- Updated base to 17.41.37
+- Added the following patches: `hide-crowdfunding-box`, `hide-artist-card`, `hide-album-cards` and `comment`
+- Use proper scaled icons
+- Fixes and improvements to other patches
+
 ## 2022-10-21
 - Added two new patches: `hide-my-mix` (removes mix playlists from the feed) and `hide-captions-button` (hides the captions button on video player)
 - Temporarily excluded `hide-create-button` patch (conflicts with `hide-shorts-button` and makes the app crash)
