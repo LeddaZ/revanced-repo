@@ -3,6 +3,8 @@
 ## 2022-10-28
 - Updated base to 17.41.37
 - Added the following patches: `hide-crowdfunding-box`, `hide-artist-card`, `hide-album-cards` and `comment`
+- Re-added `hide-create-button`
+- Changed default app name to ReVanced
 - Use proper scaled icons
 - Fixes and improvements to other patches
 
