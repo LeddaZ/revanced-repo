@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Latest compatible versions of APKs:
-# YouTube 17.41.37
-# YouTube Music 5.29.52
-# Vanced microG 0.2.24.220220
-
 music=no
 revanced=no
 while getopts mr flag
