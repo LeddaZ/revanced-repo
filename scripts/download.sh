@@ -10,7 +10,7 @@ do
     esac
 done
 
-YT_VERSION="17-36-37"
+YT_VERSION="17-41-37"
 YTM_VERSION="5-29-52"
 
 declare -A apks
