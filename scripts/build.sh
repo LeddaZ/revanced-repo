@@ -56,7 +56,7 @@ if [ "$revanced" = 'yes' ]; then
     echo "*    Building YouTube ReVanced     *"
     echo "************************************"
 
-    yt_excluded_patches="-e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e exclusive-audio-playback -e hide-get-premium -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e tasteBuilder-remover -e upgrade-button-remover"
+    yt_excluded_patches="-e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e exclusive-audio-playback -e hide-get-premium -e minimized-playback-music -e music-microg-support -e music-video-ads -e tasteBuilder-remover -e upgrade-button-remover"
     yt_included_patches="-i enable-debugging"
 
     if [ -f "youtube.apk" ]; then
