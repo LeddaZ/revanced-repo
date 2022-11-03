@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2022-11-03
+- Updated base to 5.31.50
+
 ## 2022-10-28
 - Use proper scaled icons
 

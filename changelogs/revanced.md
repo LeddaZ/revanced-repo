@@ -1,5 +1,11 @@
 # ReVanced changelog
 
+## 2022-11-03
+- Updated base to 17.43.36
+- Added `hide-watch-in-vr` patch
+- Updated Return YouTube Dislike to support new UI
+- Hide Shorts comments button when hide comments is enabled
+
 ## 2022-10-28
 - Updated base to 17.41.37
 - Added the following patches: `hide-crowdfunding-box`, `hide-artist-card`, `hide-album-cards` and `comment`
