@@ -57,11 +57,10 @@ if [ "$revanced" = 'yes' ]; then
     echo "************************************"
 
     yt_excluded_patches="-e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e exclusive-audio-playback -e hide-get-premium -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e tasteBuilder-remover -e upgrade-button-remover"
-    yt_included_patches="-i debugging"
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $yt_excluded_patches $yt_included_patches \
+                                $yt_excluded_patches \
                                 -a youtube.apk -o build/revanced-nonroot.apk
         echo "YouTube ReVanced build finished"
     else
@@ -76,7 +75,7 @@ if [ "$music" = 'yes' ]; then
     echo "*     Building ReVanced Music      *"
     echo "************************************"
 
-    ytm_excluded_patches="-e always-autorepeat -e autorepeat-by-default -e client-spoof -e comments -e custom-branding -e custom-video-buffer -e custom-video-speed -e disable-auto-captions -e disable-auto-player-popup-panels -e disable-create-button -e disable-fullscreen-panels -e disable-startup-shorts-player -e downloads -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-album-cards -e hide-artist-card -e hide-autoplay-button -e hide-captions-button -e hide-cast-button -e hide-create-button -e hide-crowdfunding-box -e hide-email-address -e hide-endscreen-cards -e hide-info-cards -e hide-my-mix -e hide-shorts-button -e hide-time-and-seekbar -e hide-video-buttons -e hide-watch-in-vr -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e open-links-directly -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e theme -e video-ads"
+    ytm_excluded_patches="-e always-autorepeat -e autorepeat-by-default -e client-spoof -e comments -e custom-branding -e custom-video-buffer -e custom-video-speed -e debugging -e disable-auto-captions -e disable-auto-player-popup-panels -e disable-create-button -e disable-fullscreen-panels -e disable-startup-shorts-player -e downloads -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-album-cards -e hide-artist-card -e hide-autoplay-button -e hide-captions-button -e hide-cast-button -e hide-create-button -e hide-crowdfunding-box -e hide-email-address -e hide-endscreen-cards -e hide-info-cards -e hide-my-mix -e hide-shorts-button -e hide-time-and-seekbar -e hide-video-buttons -e hide-watch-in-vr -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e open-links-directly -e premium-heading -e remember-video-quality -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e theme -e video-ads"
 
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
