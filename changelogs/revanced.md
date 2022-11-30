@@ -1,5 +1,10 @@
 # ReVanced changelog
 
+## 2022-11-30
+- Updated base to 17.45.36
+- Added `remove-player-button-background patch`
+- Improvements to existing patches
+
 ## 2022-11-03
 - Updated base to 17.43.36
 - Added `hide-watch-in-vr` patch
