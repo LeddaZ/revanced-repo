@@ -2,7 +2,7 @@
 
 ## 2022-11-30
 - Updated base to 17.45.36
-- Added `remove-player-button-background patch`
+- Added `open-links-directly` and `remove-player-button-background` patch
 - Improvements to existing patches
 
 ## 2022-11-03
