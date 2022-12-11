@@ -3,13 +3,13 @@ This repo template will allow you to build non-root ReVanced and ReVanced Music 
 
 This will build non-root ReVanced with all patches except `premium-heading`, they can be configured (or disabled) from the ReVanced settings menu in the app.
 
-ReVanced Music will be built with these patches: `background-play`, `codecs-unlock`, `compact-header`, `custom-music-branding`, `exclusive-audio-playback`, `hide-get-premium`, `minimized-playback-music`, `music-microg-support`, `music-video-ads`, `tasteBuilder-remover` and `upgrade-button-remover`.
+ReVanced Music will be built with these patches: `background-play`, `codecs-unlock`, `compact-header`, `custom-music-branding`, `exclusive-audio-playback`, `hide-get-premium`, `minimized-playback-music`, `music-microg-support`, `music-video-ads`, `predictive-back-gesture`, `tasteBuilder-remover` and `upgrade-button-remover`.
 
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/LeddaZ/revanced-patches).
 
 ### Latest supported versions
 - YouTube: `17.45.36`
-- YouTube Music: `5.31.50`
+- YouTube Music: `5.34.51`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.

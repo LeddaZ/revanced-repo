@@ -57,10 +57,11 @@ if [ "$revanced" = 'yes' ]; then
     echo "************************************"
 
     yt_excluded_patches="-e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e exclusive-audio-playback -e hide-get-premium -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e tasteBuilder-remover -e upgrade-button-remover"
+    yt_included_patches="-i theme"
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $yt_excluded_patches \
+                                $yt_excluded_patches $yt_included_patches \
                                 -a youtube.apk -o build/revanced-nonroot.apk
         echo "YouTube ReVanced build finished"
     else
