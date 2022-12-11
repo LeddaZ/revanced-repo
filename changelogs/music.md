@@ -1,5 +1,9 @@
 # ReVanced Music changelog
 
+# 2022-12-11
+- Updated base to 5.34.51
+- Enabled predictive back gesture on Android 13
+
 ## 2022-11-03
 - Updated base to 5.31.50
 

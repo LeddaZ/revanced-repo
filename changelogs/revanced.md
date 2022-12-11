@@ -1,5 +1,11 @@
 # ReVanced changelog
 
+# 2022-12-11
+- Enabled predictive back gesture on Android 13
+- Fixed swipe down to refresh
+- Improvements to existing patches
+- Re-enabled `theme` patch
+
 ## 2022-11-30
 - Updated base to 17.45.36
 - Added `open-links-directly` and `remove-player-button-background` patch
