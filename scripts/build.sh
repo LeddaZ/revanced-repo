@@ -51,6 +51,8 @@ mkdir -p build
 # A list of available patches and their descriptions can be found here:
 # https://github.com/LeddaZ/revanced-patches
 
+common_included_patches="-i predictive-back-gesture"
+
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
     echo "*    Building YouTube ReVanced     *"
@@ -61,7 +63,7 @@ if [ "$revanced" = 'yes' ]; then
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $yt_excluded_patches $yt_included_patches \
+                                $yt_excluded_patches $yt_included_patches $common_included_patches \
                                 -a youtube.apk -o build/revanced-nonroot.apk
         echo "YouTube ReVanced build finished"
     else
@@ -81,7 +83,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $ytm_excluded_patches \
+                                $ytm_excluded_patches $common_included_patches \
                                 -a music-arm.apk -o build/revanced-music-nonroot-arm.apk
         echo "ReVanced Music arm build finished"
     else

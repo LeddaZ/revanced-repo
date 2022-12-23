@@ -8,8 +8,8 @@ ReVanced Music will be built with these patches: `background-play`, `codecs-unlo
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/LeddaZ/revanced-patches).
 
 ### Latest supported versions
-- YouTube: `17.45.36`
-- YouTube Music: `5.34.51`
+- YouTube: `17.49.37`
+- YouTube Music: `5.36.51`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
