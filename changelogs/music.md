@@ -1,5 +1,9 @@
 # ReVanced Music changelog
 
+# 2023-01-19
+- Updated base to 5.39.52
+- Disabled predictive back gesture
+
 # 2022-12-24
 - Updated base to 5.36.51
 

@@ -1,5 +1,10 @@
 # ReVanced changelog
 
+# 2023-01-19
+- Disabled predictive back gesture
+- Added `hide-breaking-news-shelf`, `copy-video-url`, `remember-playback-rate` and `spoof-app-version` patches
+- Improvements to existing patches
+
 # 2022-12-24
 - Updated base to 17.49.37
 - Improvements to existing patches
