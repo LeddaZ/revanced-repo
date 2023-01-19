@@ -17,7 +17,7 @@ declare -A artifacts
 
 artifacts["revanced-cli.jar"]="revanced/revanced-cli revanced-cli .jar"
 artifacts["revanced-integrations.apk"]="revanced/revanced-integrations app-release-unsigned .apk"
-artifacts["revanced-patches.jar"]="LeddaZ/revanced-patches revanced-patches .jar"
+artifacts["revanced-patches.jar"]="revanced/revanced-patches revanced-patches .jar"
 artifacts["apkeep"]="EFForg/apkeep apkeep-x86_64-unknown-linux-gnu"
 
 get_artifact_download_url () {
@@ -49,21 +49,17 @@ fi
 mkdir -p build
 
 # A list of available patches and their descriptions can be found here:
-# https://github.com/LeddaZ/revanced-patches
-
-common_included_patches="-i predictive-back-gesture"
-
+# https://github.com/revanced/revanced-patches
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
     echo "*    Building YouTube ReVanced     *"
     echo "************************************"
 
-    yt_excluded_patches="-e background-play -e codecs-unlock -e compact-header -e custom-music-branding -e exclusive-audio-playback -e hide-get-premium -e minimized-playback-music -e music-microg-support -e music-video-ads -e premium-heading -e tasteBuilder-remover -e upgrade-button-remover"
-    yt_included_patches="-i theme"
+    yt_excluded_patches="-e premium-heading"
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $yt_excluded_patches $yt_included_patches $common_included_patches \
+                                $yt_excluded_patches \
                                 -a youtube.apk -o build/revanced-nonroot.apk
         echo "YouTube ReVanced build finished"
     else
@@ -78,12 +74,9 @@ if [ "$music" = 'yes' ]; then
     echo "*     Building ReVanced Music      *"
     echo "************************************"
 
-    ytm_excluded_patches="-e always-autorepeat -e autorepeat-by-default -e client-spoof -e comments -e custom-branding -e custom-video-buffer -e custom-video-speed -e debugging -e disable-auto-captions -e disable-auto-player-popup-panels -e disable-create-button -e disable-fullscreen-panels -e disable-startup-shorts-player -e disable-zoom-haptics -e downloads -e enable-wide-searchbar -e general-ads -e hdr-auto-brightness -e hide-album-cards -e hide-artist-card -e hide-autoplay-button -e hide-captions-button -e hide-cast-button -e hide-create-button -e hide-crowdfunding-box -e hide-email-address -e hide-endscreen-cards -e hide-info-cards -e hide-my-mix -e hide-shorts-button -e hide-time-and-seekbar -e hide-video-buttons -e hide-watch-in-vr -e hide-watermark -e microg-support -e minimized-playback -e old-quality-layout -e open-links-directly -e premium-heading -e remember-video-quality -e remove-player-button-background -e return-youtube-dislike -e seekbar-tapping -e settings -e sponsorblock -e swipe-controls -e tablet-mini-player -e video-ads"
-
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $ytm_excluded_patches $common_included_patches \
                                 -a music-arm.apk -o build/revanced-music-nonroot-arm.apk
         echo "ReVanced Music arm build finished"
     else
@@ -93,7 +86,6 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm64 APK === "
     if [ -f "music-arm64.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $ytm_excluded_patches \
                                 -a music-arm64.apk -o build/revanced-music-nonroot-arm64.apk
         echo "ReVanced Music arm64 build finished"
     else
@@ -103,7 +95,6 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86 APK ==="
     if [ -f "music-x86.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $ytm_excluded_patches \
                                 -a music-x86.apk -o build/revanced-music-nonroot-x86.apk
         echo "ReVanced Music x86 build finished"
     else
@@ -113,7 +104,6 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86_64 APK ==="
     if [ -f "music-x86_64.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $ytm_excluded_patches \
                                 -a music-x86_64.apk -o build/revanced-music-nonroot-x86_64.apk
         echo "ReVanced Music x86_64 build finished"
         echo "ReVanced Music build finished"
