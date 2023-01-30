@@ -1,13 +1,17 @@
 # ReVanced Music changelog
 
-# 2023-01-19
+## 2023-01-30
+- Update base to 5.40.51
+- Temporarily exclude `hide-get-premium` patch until it's updated
+
+## 2023-01-19
 - Updated base to 5.39.52
 - Disabled predictive back gesture
 
-# 2022-12-24
+## 2022-12-24
 - Updated base to 5.36.51
 
-# 2022-12-11
+## 2022-12-11
 - Updated base to 5.34.51
 - Enabled predictive back gesture on Android 13
 

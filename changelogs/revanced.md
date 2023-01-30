@@ -1,15 +1,22 @@
 # ReVanced changelog
 
-# 2023-01-19
+## 2023-01-30
+- `return-youtube-dislike`: do not fetch voting stats when watching shorts
+- `sponsorblock`: replace missing strings
+- `general-ads`: remove hiding video shelf
+- `open-links-externally` patch
+- Show toasts along exceptions
+
+## 2023-01-19
 - Disabled predictive back gesture
 - Added `hide-breaking-news-shelf`, `copy-video-url`, `remember-playback-rate` and `spoof-app-version` patches
 - Improvements to existing patches
 
-# 2022-12-24
+## 2022-12-24
 - Updated base to 17.49.37
 - Improvements to existing patches
 
-# 2022-12-11
+## 2022-12-11
 - Enabled predictive back gesture on Android 13
 - Fixed swipe down to refresh
 - Improvements to existing patches
