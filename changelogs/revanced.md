@@ -1,5 +1,13 @@
 # ReVanced changelog
 
+## 2023-02-15
+- `custom-branding`: correct scaling, margin and images
+- `hide-player-buttons` patch
+- `general-ads`: hide pill to view products
+- `minimized-playback`: disable when playing shorts
+- `general-ads`: use better description for switch
+- `general-ads`: hide web search results
+
 ## 2023-01-30
 - `return-youtube-dislike`: do not fetch voting stats when watching shorts
 - `sponsorblock`: replace missing strings

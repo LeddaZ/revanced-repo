@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2023-02-15
+- Bump patches compatibility to v5.41.50
+
 ## 2023-01-30
 - Update base to 5.40.51
 - Temporarily exclude `hide-get-premium` patch until it's updated
