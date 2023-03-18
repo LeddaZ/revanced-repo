@@ -1,5 +1,35 @@
 # ReVanced changelog
 
+## 2023-03-18
+### Patches v2.163.0
+- `disable-fullscreen-panels-auto-popup`: use proper descriptions
+- `general-ads`: fix switch description wording
+- `hide-time`: use correct integrations class
+- `hide-watch-in-vr`: fix descriptions
+- `open-links-directly`: reference correct integrations method
+- `general-ads`: hide channel bar
+- `general-ads`: hide horizontal video shelf
+- `open-links-directly`: skip every redirect url
+### Patches v2.164.0
+- `general-ads`: hide quick actions in fullscreen
+- `general-ads`: hide related videos in quick action
+- `return-youtube-dislike`: support for shorts
+- Remove patch `open-links-directly`
+### Patches v2.165.0
+- `spoof-signature-verification` patch
+### Patches v2.165.1
+- `spoof-signature-verification`: use correct fingerprint
+### Patches v2.166.0
+- `general-ads`: remove duplicate preference
+- `return-youtube-dislike`: add missing strings
+- `custom-video-buffer`: replace patch with removal notice
+- `disable-player-popup-panels`: use better patch description
+- `general-ads`: do not hide components in library tab
+- `general-ads`: hide image shelf from search results
+- `hide-autoplay-button`: do not disable autoplay button when hidden
+- `hide-floating-microphone-button`
+- Bump compatibility to 18.05.40
+
 ## 2023-02-15
 - `custom-branding`: correct scaling, margin and images
 - `hide-player-buttons` patch

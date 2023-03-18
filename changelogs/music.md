@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2023-03-18
+- Updated base to 5.48.52
+
 ## 2023-02-15
 - Bump patches compatibility to v5.41.50
 
