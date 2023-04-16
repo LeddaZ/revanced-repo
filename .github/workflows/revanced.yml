@@ -35,7 +35,7 @@ jobs:
           keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
           keyPassword: '${{ secrets.KEY_PASSWORD }}'
         env:
-          BUILD_TOOLS_VERSION: "30.0.2"     
+          BUILD_TOOLS_VERSION: "34.0.0"
           
       - name: Generate SHA256 checksums for the signed APK file
         run: ./scripts/sha256gen.sh -r
