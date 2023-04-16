@@ -1,0 +1,2 @@
+# Force the following filetypes to have unix EOLs, so Windows does not break them
+*.* text eol=lf
