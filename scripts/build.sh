@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Set up flags
 music=no
 revanced=no
 while getopts mr flag
@@ -10,15 +11,13 @@ do
     esac
 done
 
-VMG_VERSION="0.2.24.220220"
-
 # Artifacts associative array aka dictionary
 declare -A artifacts
 
 artifacts["revanced-cli.jar"]="revanced/revanced-cli revanced-cli .jar"
 artifacts["revanced-integrations.apk"]="revanced/revanced-integrations revanced-integrations .apk"
 artifacts["revanced-patches.jar"]="revanced/revanced-patches revanced-patches .jar"
-artifacts["apkeep"]="EFForg/apkeep apkeep-x86_64-unknown-linux-gnu"
+artifacts["vanced-microG.apk"]="inotia00/mMicroG microg.apk"
 
 get_artifact_download_url () {
     # Usage: get_download_url <repo_name> <artifact_name> <file_type>
@@ -35,17 +34,6 @@ for artifact in "${!artifacts[@]}"; do
     fi
 done
 
-# Fetch Vanced microG
-chmod +x apkeep
-
-if [ "$revanced" = 'yes' ]; then
-    if [ ! -f "vanced-microG.apk" ]; then
-        echo "Downloading Vanced microG"
-        ./apkeep -a com.mgoogle.android.gms@$VMG_VERSION .
-        mv com.mgoogle.android.gms@$VMG_VERSION.apk vanced-microG.apk
-    fi
-fi
-
 mkdir -p build
 
 # A list of available patches and their descriptions can be found here:
@@ -59,8 +47,8 @@ if [ "$revanced" = 'yes' ]; then
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                $yt_excluded_patches \
-                                -a youtube.apk -o build/revanced-nonroot.apk
+            $yt_excluded_patches \
+            -a youtube.apk -o build/revanced-nonroot.apk
         echo "YouTube ReVanced build finished"
     else
         echo "Cannot find YouTube APK, skipping build"
@@ -77,7 +65,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                -a music-arm.apk -o build/revanced-music-nonroot-arm.apk
+            -a music-arm.apk -o build/revanced-music-nonroot-arm.apk
         echo "ReVanced Music arm build finished"
     else
         echo "Cannot find YouTube Music arm APK, skipping build"
@@ -86,7 +74,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm64 APK === "
     if [ -f "music-arm64.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                -a music-arm64.apk -o build/revanced-music-nonroot-arm64.apk
+            -a music-arm64.apk -o build/revanced-music-nonroot-arm64.apk
         echo "ReVanced Music arm64 build finished"
     else
         echo "Cannot find YouTube Music arm64 APK, skipping build"
@@ -95,7 +83,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86 APK ==="
     if [ -f "music-x86.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                -a music-x86.apk -o build/revanced-music-nonroot-x86.apk
+            -a music-x86.apk -o build/revanced-music-nonroot-x86.apk
         echo "ReVanced Music x86 build finished"
     else
         echo "Cannot find YouTube Music x86 APK, skipping build"
@@ -104,7 +92,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86_64 APK ==="
     if [ -f "music-x86_64.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-                                -a music-x86_64.apk -o build/revanced-music-nonroot-x86_64.apk
+            -a music-x86_64.apk -o build/revanced-music-nonroot-x86_64.apk
         echo "ReVanced Music x86_64 build finished"
         echo "ReVanced Music build finished"
     else
