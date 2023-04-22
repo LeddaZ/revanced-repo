@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2023-04-22
+- Update to 5.53.50
+
 ## 2023-03-18
 - Updated base to 5.48.52
 

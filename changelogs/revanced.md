@@ -1,5 +1,16 @@
 # ReVanced changelog
 
+## 2023-04-22
+- Update to 18.08.37
+- Allow to not remember playback speed
+- Automatic signature spoofing to prevent playback issues
+- Change 'Hide create, clip and thanks buttons' to default off
+- Fix 'Hide share button'
+- Hide more types of ads
+- Disable preferences and add dialog messages to preferences
+- Change default video speed and quality inside the settings menu
+- Various fixes and improvements to Sponsorblock and other patches
+
 ## 2023-03-18
 ### Patches v2.163.0
 - `disable-fullscreen-panels-auto-popup`: use proper descriptions
