@@ -3,11 +3,10 @@
 # Set up flags
 music=no
 revanced=no
-while getopts mr flag
-do
+while getopts mr flag; do
     case "${flag}" in
-        m) music=yes;;
-        r) revanced=yes;;
+    m) music=yes ;;
+    r) revanced=yes ;;
     esac
 done
 
@@ -19,7 +18,7 @@ WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/2010010
 
 # Wget function
 req() {
-    wget -nv -O "$2" --header="$WGET_HEADER" "$1";
+    wget -nv -O "$2" --header="$WGET_HEADER" "$1"
 }
 
 # Wget download apk
@@ -88,4 +87,4 @@ dl_apks() {
 }
 
 # Main
-dl_apks()
+dl_apks

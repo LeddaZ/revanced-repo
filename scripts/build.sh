@@ -3,11 +3,10 @@
 # Set up flags
 music=no
 revanced=no
-while getopts mr flag
-do
+while getopts mr flag; do
     case "${flag}" in
-        m) music=yes;;
-        r) revanced=yes;;
+    m) music=yes ;;
+    r) revanced=yes ;;
     esac
 done
 
@@ -19,7 +18,7 @@ artifacts["revanced-integrations.apk"]="revanced/revanced-integrations revanced-
 artifacts["revanced-patches.jar"]="revanced/revanced-patches revanced-patches .jar"
 artifacts["vanced-microG.apk"]="inotia00/mMicroG microg.apk"
 
-get_artifact_download_url () {
+get_artifact_download_url() {
     # Usage: get_download_url <repo_name> <artifact_name> <file_type>
     local api_url="https://api.github.com/repos/$1/releases/latest"
     local result=$(curl $api_url | jq ".assets[] | select(.name | contains(\"$2\") and contains(\"$3\") and (contains(\".sig\") | not)) | .browser_download_url")
