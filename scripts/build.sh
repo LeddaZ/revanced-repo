@@ -16,7 +16,7 @@ declare -A artifacts
 artifacts["revanced-cli.jar"]="revanced/revanced-cli revanced-cli .jar"
 artifacts["revanced-integrations.apk"]="revanced/revanced-integrations revanced-integrations .apk"
 artifacts["revanced-patches.jar"]="revanced/revanced-patches revanced-patches .jar"
-artifacts["vanced-microG.apk"]="inotia00/mMicroG microg.apk"
+artifacts["apkeep"]="EFForg/apkeep apkeep-x86_64-unknown-linux-gnu"
 
 get_artifact_download_url() {
     # Usage: get_download_url <repo_name> <artifact_name> <file_type>
@@ -32,6 +32,18 @@ for artifact in "${!artifacts[@]}"; do
         curl -L -o $artifact $(get_artifact_download_url ${artifacts[$artifact]})
     fi
 done
+
+# Fetch Vanced microG
+VMG_VERSION="0.2.24.220220"
+chmod +x apkeep
+
+if [ "$revanced" = 'yes' ]; then
+    if [ ! -f "vanced-microG.apk" ]; then
+        echo "Downloading Vanced microG"
+        ./apkeep -a com.mgoogle.android.gms@$VMG_VERSION .
+        mv com.mgoogle.android.gms@$VMG_VERSION.apk vanced-microG.apk
+    fi
+fi
 
 mkdir -p build
 
