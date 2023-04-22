@@ -10,8 +10,18 @@ while getopts mr flag; do
     esac
 done
 
-YT_VERSION="18-08-37"
-YTM_VERSION="5-53-50"
+YT_VERSION="18.08.37"
+YTM_VERSION="5.53.50"
+
+declare -A apks
+
+apks["youtube.apk"]=dl_yt
+apks["music-arm.apk"]=dl_ytm_arm
+apks["music-arm64.apk"]=dl_ytm_arm64
+apks["music-x86.apk"]=dl_ytm_x86
+apks["music-x86_64.apk"]=dl_ytm_x86_64
+
+## Functions
 
 # Wget user agent
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -27,11 +37,12 @@ dl_apk() {
     url="https://www.apkmirror.com$(req "$url" - | tr '\n' ' ' | sed -n "s/href=\"/@/g; s;.*${regexp}.*;\1;p")"
     echo "$url"
     url="https://www.apkmirror.com$(req "$url" - | tr '\n' ' ' | sed -n 's;.*href="\(.*key=[^"]*\)">.*;\1;p')"
+    url="https://www.apkmirror.com$(req "$url" - | tr '\n' ' ' | sed -n 's;.*href="\(.*key=[^"]*\)">.*;\1;p')"
     req "$url" "$output"
 }
 
-# Download APKs
-dl_apks() {
+# Download YouTube
+dl_yt() {
     if [ "$revanced" = 'yes' ]; then
         echo "Downloading YouTube..."
 
@@ -44,9 +55,13 @@ dl_apks() {
     else
         echo "Skipping YouTube..."
     fi
+}
 
+# Download YouTube Music
+dl_ytm_arm() {
     if [ "$music" = 'yes' ]; then
         echo "Downloading YouTube Music arm..."
+
         local base_apk="music-arm.apk"
         if [ ! -f "$base_apk" ]; then
             local regexp_arch='armeabi-v7a</div>[^@]*@\([^"]*\)'
@@ -54,8 +69,15 @@ dl_apks() {
                 "$regexp_arch" \
                 "$base_apk")
         fi
+    else
+        echo "Skipping YouTube Music arm..."
+    fi
+}
 
+dl_ytm_arm64() {
+    if [ "$music" = 'yes' ]; then
         echo "Downloading YouTube Music arm64..."
+
         local base_apk="music-arm64.apk"
         if [ ! -f "$base_apk" ]; then
             local regexp_arch='arm64-v8a</div>[^@]*@\([^"]*\)'
@@ -63,8 +85,15 @@ dl_apks() {
                 "$regexp_arch" \
                 "$base_apk")
         fi
+    else
+        echo "Skipping YouTube Music arm64..."
+    fi
+}
 
+dl_ytm_x86() {
+    if [ "$music" = 'yes' ]; then
         echo "Downloading YouTube Music x86..."
+
         local base_apk="music-x86.apk"
         if [ ! -f "$base_apk" ]; then
             local regexp_arch='x86</div>[^@]*@\([^"]*\)'
@@ -72,8 +101,15 @@ dl_apks() {
                 "$regexp_arch" \
                 "$base_apk")
         fi
+    else
+        echo "Skipping YouTube Music x86..."
+    fi
+}
 
+dl_ytm_x86_64() {
+    if [ "$music" = 'yes' ]; then
         echo "Downloading YouTube Music x86_64..."
+
         local base_apk="music-x86_64.apk"
         if [ ! -f "$base_apk" ]; then
             local regexp_arch='x86_64</div>[^@]*@\([^"]*\)'
@@ -82,9 +118,13 @@ dl_apks() {
                 "$base_apk")
         fi
     else
-        echo "Skipping YouTube Music..."
+        echo "Skipping YouTube Music x86_64..."
     fi
 }
 
 # Main
-dl_apks
+for apk in "${!apks[@]}"; do
+    if [ ! -f "$apk" ]; then
+        ${apks[$apk]}
+    fi
+done
