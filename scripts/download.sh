@@ -10,8 +10,8 @@ do
     esac
 done
 
-YT_VERSION="18-05-40"
-YTM_VERSION="5-48-52"
+YT_VERSION="18-08-37"
+YTM_VERSION="5-53-50"
 
 ## Functions
 
