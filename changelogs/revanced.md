@@ -1,5 +1,15 @@
 # ReVanced changelog
 
+## 2023-05-10
+- Update to 18.16.37
+- Disable debugging by default
+- Fix hide action buttons not working for some users
+- Remove hide-my-mix patch (broken)
+- Disable minimized playback for shorts
+- Add hide-player-overlay and navigation-button patches
+- Fix background play of kids videos
+- Other fixes and improvements
+
 ## 2023-04-22
 - Update to 18.08.37
 - Allow to not remember playback speed
