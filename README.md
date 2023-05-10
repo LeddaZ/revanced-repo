@@ -6,7 +6,7 @@ This will build non-root ReVanced all patches except `premium-heading`, they can
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/revanced/revanced-patches).
 
 ### Latest supported versions
-- YouTube: `18.08.37`
+- YouTube: `18.16.37`
 - YouTube Music: `5.53.50`
 
 ## How to setup

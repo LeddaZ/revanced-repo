@@ -10,7 +10,7 @@ while getopts mr flag; do
     esac
 done
 
-YT_VERSION="18.08.37"
+YT_VERSION="18.16.37"
 YTM_VERSION="5.53.50"
 
 declare -A apks
