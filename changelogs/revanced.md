@@ -1,5 +1,15 @@
 # ReVanced changelog
 
+## 2023-06-07
+- Updated to 18.19.35
+- Fix default video quality/speed being applied when resuming app
+- Fix temporarily frozen video after opening a short
+- Add tap and hold functionality to copy video URL buttons
+- Add option to import/export ReVanced settings
+- Add hide-load-more-button, hide-filter-bar and hide-shorts-components patches
+- Use dynamic background color for custom splash screen
+- Other fixes and improvements
+
 ## 2023-05-10
 - Update to 18.16.37
 - Disable debugging by default
