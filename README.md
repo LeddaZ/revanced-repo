@@ -1,13 +1,13 @@
 # ReVanced Repo ![downloadCount](https://img.shields.io/github/downloads/LeddaZ/revanced-repo/total?color=blue&label=Downloads)
 This repo template will allow you to build non-root ReVanced and ReVanced Music using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
-This will build non-root ReVanced all patches except `premium-heading`, they can be configured (or disabled) from the ReVanced settings menu in the app. ReVanced Music will be built with all patches except `bypass-certificate-checks` and `hide-get-premium` (they aren't compatible with the latest version).
+This will build non-root ReVanced and ReVanced Music with all patches that are included by default (except `premium-heading`), in addition to the `predictive-back-gesture` patch.
 
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/revanced/revanced-patches).
 
 ### Latest supported versions
 - YouTube: `18.19.35`
-- YouTube Music: `6.04.52`
+- YouTube Music: `6.08.50`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.

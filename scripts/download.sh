@@ -11,7 +11,7 @@ while getopts mr flag; do
 done
 
 YT_VERSION="18.19.35"
-YTM_VERSION="6.04.52"
+YTM_VERSION="6.08.50"
 
 declare -A apks
 
