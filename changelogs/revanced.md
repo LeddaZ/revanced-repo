@@ -1,5 +1,10 @@
 # ReVanced changelog
 
+## 2023-07-07
+- Option to hide mix playlists
+- Don't re-enable signature spoof automatically
+- Enable predictive back gesture
+
 ## 2023-06-07
 - Updated to 18.19.35
 - Fix default video quality/speed being applied when resuming app

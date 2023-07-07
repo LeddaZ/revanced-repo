@@ -1,5 +1,9 @@
 # ReVanced Music changelog
 
+## 2023-07-07
+- Update to 6.08.50
+- Enable predictive back gesture
+
 ## 2023-06-07
 - Updated to 6.04.52
 
