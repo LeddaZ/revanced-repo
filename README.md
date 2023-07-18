@@ -3,11 +3,11 @@ This repo template will allow you to build non-root ReVanced and ReVanced Music 
 
 This will build non-root ReVanced and ReVanced Music with all patches that are included by default (except `premium-heading`), in addition to the `predictive-back-gesture` patch.
 
-You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://github.com/revanced/revanced-patches).
+You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://revanced.app/patches).
 
 ### Latest supported versions
-- YouTube: `18.19.35`
-- YouTube Music: `6.08.50`
+- YouTube: `18.23.35`
+- YouTube Music: `6.10.51`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.

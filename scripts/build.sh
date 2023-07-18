@@ -47,16 +47,14 @@ fi
 
 mkdir -p build
 
-global_included_patches="-i predictive-back-gesture"
+global_included_patches='-i "Predictive back gesture"'
 
-# A list of available patches and their descriptions can be found here:
-# https://github.com/revanced/revanced-patches
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
     echo "*    Building YouTube ReVanced     *"
     echo "************************************"
 
-    yt_excluded_patches="-e premium-heading"
+    yt_excluded_patches='-e "Premium heading"'
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
