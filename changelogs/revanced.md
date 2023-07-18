@@ -1,5 +1,10 @@
 # ReVanced changelog
 
+## 2023-07-18
+- Updated to 18.23.35
+- Remove non-functional custom video buffer patch
+- Update app icon
+
 ## 2023-07-07
 - Option to hide mix playlists
 - Don't re-enable signature spoof automatically
