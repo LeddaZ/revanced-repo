@@ -47,18 +47,13 @@ fi
 
 mkdir -p build
 
-global_included_patches="-i predictive-back-gesture"
-
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
     echo "*    Building YouTube ReVanced     *"
     echo "************************************"
 
-    yt_excluded_patches="-e premium-heading"
-
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-            $yt_excluded_patches $global_included_patches \
             -a youtube.apk -o build/revanced-nonroot.apk
         echo "YouTube ReVanced build finished"
     else
@@ -76,7 +71,6 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-            $global_included_patches \
             -a music-arm.apk -o build/revanced-music-nonroot-arm.apk
         echo "ReVanced Music arm build finished"
     else
@@ -86,7 +80,6 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm64 APK === "
     if [ -f "music-arm64.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-            $global_included_patches \
             -a music-arm64.apk -o build/revanced-music-nonroot-arm64.apk
         echo "ReVanced Music arm64 build finished"
     else
@@ -96,7 +89,6 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86 APK ==="
     if [ -f "music-x86.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-            $global_included_patches \
             -a music-x86.apk -o build/revanced-music-nonroot-x86.apk
         echo "ReVanced Music x86 build finished"
     else
@@ -106,7 +98,6 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86_64 APK ==="
     if [ -f "music-x86_64.apk" ]; then
         java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar \
-            $global_included_patches \
             -a music-x86_64.apk -o build/revanced-music-nonroot-x86_64.apk
         echo "ReVanced Music x86_64 build finished"
         echo "ReVanced Music build finished"
