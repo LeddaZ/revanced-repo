@@ -16,8 +16,21 @@ jobs:
           java-version: "17"
           distribution: "zulu"
 
-      - name: Download base APKs
-        run: ./scripts/download.sh -m -r
+      - name: Download YouTube APK
+        uses: robinraju/release-downloader@v1.8
+        with:
+          repository: ${{ github.repository }}
+          tag: 'base'
+          fileName: "youtube.apk"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download YouTube Music APKs
+        uses: robinraju/release-downloader@v1.8
+        with:
+          repository: ${{ github.repository }}
+          tag: 'base'
+          fileName: "music*.apk"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build APKs
         run: ./scripts/build.sh -m -r

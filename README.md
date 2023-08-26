@@ -12,6 +12,7 @@ You can modify the `scripts/build.sh` script to choose the patches you want. A l
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
 2. [Set up signing](signing.md) (if you don't want to, you can remove the signing part in the three workflows)
+3. Download the needed APKs from APKMirror and upload them to a new release with the `base` tag ([Step 1](images/release_1.png), [Step 2](images/release_2.png)). The names must be `youtube.apk`, `music-arm.apk`, `music-arm64.apk`, `music-x86.apk`, `music-x86_64.apk`.
 
 ## How to build
 1. Go to Actions -> All workflows -> Choose what you want to build ([Example](images/workflow_run.png))
