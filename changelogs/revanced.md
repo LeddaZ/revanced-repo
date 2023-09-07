@@ -1,5 +1,18 @@
 # ReVanced changelog
 
+## 2023-09-07
+- Updated to 18.32.39
+- Allow setting no background color
+- Apply custom seekbar color to shorts
+- Add a switch to enable/disable custom seekbar color
+- Add switch to hide chips shelf
+- Add Player Flyout Menu patch
+- Add switch to hide individual action buttons 
+- Add Alternative thumbnails patch 
+- Add Custom player overlay opacity patch 
+- Add Enable tablet layout patch
+- Restored original app name and icon
+
 ## 2023-07-18
 - Updated to 18.23.35
 - Remove non-functional custom video buffer patch

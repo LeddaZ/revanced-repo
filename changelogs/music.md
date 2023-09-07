@@ -1,5 +1,9 @@
 # ReVanced Music changelog
 
+## 2023-09-07
+- Updated to 6.17.52
+- Remove upgrade button: Remove the correct navigation bar item
+
 ## 2023-07-18
 - Updated to 6.10.51
 

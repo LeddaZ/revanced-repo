@@ -1,13 +1,13 @@
 {
-  "latestReVancedVersion": "18.23.35",
-  "latestReVancedMusicVersion": "6.10.51",
+  "latestReVancedVersion": "18.32.39",
+  "latestReVancedMusicVersion": "6.17.52",
   "latestMicroGVersion": "0.2.24.220220",
   "latestAppVersion": "2.1.5",
-  "latestReVancedDate": "20230718",
-  "latestReVancedMusicDate": "20230718",
-  "latestReVancedHash": "c1b1d088742149f71762ec389e56fabf395efe3d0500992cb8061931ea6cdffe",
-  "latestReVancedMusicHashArm": "341c2d150455692ea21301bee873a5e863a62ec8eb6df49012bf8dab572cb6da",
-  "latestReVancedMusicHashArm64": "a668e8ec73c5af5974225ffe1d4defda633eb705e799f6629891f173b69fdc98",
-  "latestReVancedMusicHashX86": "ae8d75139af2d84f8711443b450024e0b39d51c6d0141e91aa81f14cc2467ffd",
-  "latestReVancedMusicHashX86_64": "f95d0cf961bf8f8c7b2115a67d4d36b968b6450246aca05c7b79a6cbb88fc7ca"
+  "latestReVancedDate": "20230907",
+  "latestReVancedMusicDate": "20230907",
+  "latestReVancedHash": "4977c2054ec2789f8f0968f62d7a00eed03fa8ef6744501253eb5cb585aa432e",
+  "latestReVancedMusicHashArm": "a30477f58dc2a5987f2a3405d0cc492be5db53d8f138ebf6de2b1103dc167c51",
+  "latestReVancedMusicHashArm64": "c1d9956cde2b7c126a767aa0a90b42d79a17ac1f86dc7b6640d65d5145a99a1f",
+  "latestReVancedMusicHashX86": "dfe974ed3ad65127c548c07d54e19cbaf9468f69503324e996924156357d20ee",
+  "latestReVancedMusicHashX86_64": "021e68e8cca13707e88786cdfa1e9f923b696c30fcf833f71d53dd00594fc220"
 }
