@@ -1,7 +1,7 @@
 # ReVanced Repo ![downloadCount](https://img.shields.io/github/downloads/LeddaZ/revanced-repo/total?color=blue&label=Downloads)
 This repo template will allow you to build non-root ReVanced and ReVanced Music using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
-This will build non-root ReVanced and ReVanced Music with all patches that are included by default (except `premium-heading`), in addition to the `predictive-back-gesture` patch.
+This will build non-root ReVanced and ReVanced Music with all patches that are included by default (except `premium-heading`).
 
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://revanced.app/patches).
 
