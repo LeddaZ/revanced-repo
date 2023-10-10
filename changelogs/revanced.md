@@ -1,5 +1,16 @@
 # ReVanced changelog
 
+## 2023-10-10
+- Updated to 18.38.44
+- Hide info cards: Fix info cards not hiding for some users
+- Hide layout components: Always hide redundant 'player audio track' button
+- Hide layout components: Hide "Join", "Notify me", search result shelf header and timed reactions
+- Hide shorts components: Fix hiding navigation bar
+- Restore functionality of Old video quality menu and Custom speeds on tablets
+- Add Bypass URL redirects patch
+- Add Disable fine scrubbing gesture patch
+- Other improvements to existing patches
+
 ## 2023-09-07
 - Updated to 18.32.39
 - Allow setting no background color

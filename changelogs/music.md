@@ -1,5 +1,9 @@
 # ReVanced Music changelog
 
+## 2023-10-10
+- Updated to 6.22.51
+- Dropped support for Android 5.0, 5.1 and 6.0; 7.0 or newer is now required
+
 ## 2023-09-07
 - Updated to 6.17.52
 - Remove upgrade button: Remove the correct navigation bar item
