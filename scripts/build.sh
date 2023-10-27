@@ -73,7 +73,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/revanced-music-nonroot-arm.apk music-arm.apk
+            -b revanced-patches.jar -o build/revanced-music-nonroot-armeabi-v7a.apk music-arm.apk
         echo "ReVanced Music arm build finished"
     else
         echo "Cannot find YouTube Music arm APK, skipping build"
@@ -82,7 +82,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm64 APK === "
     if [ -f "music-arm64.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/revanced-music-nonroot-arm64.apk music-arm64.apk
+            -b revanced-patches.jar -o build/revanced-music-nonroot-arm64-v8a.apk music-arm64.apk
         echo "ReVanced Music arm64 build finished"
     else
         echo "Cannot find YouTube Music arm64 APK, skipping build"
