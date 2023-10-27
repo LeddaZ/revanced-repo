@@ -1,5 +1,12 @@
 # ReVanced changelog
 
+## 2023-10-27
+- ReturnYouTubeDislike: Fix dislikes not showing on Shorts
+- Hide layout components: Hide new channel watermark component
+- Theme: Disable gradient loading screen
+- Add Announcements patch
+- Add Spoof device dimensions patch
+
 ## 2023-10-10
 - Updated to 18.38.44
 - Hide info cards: Fix info cards not hiding for some users
