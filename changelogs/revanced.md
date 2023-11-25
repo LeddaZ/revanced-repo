@@ -1,5 +1,20 @@
 # ReVanced changelog
 
+## 2023-11-25
+- Updated to 18.45.41
+- Hide layout components: Hide video quality menu footer
+- Add Disable fullscreen ambient mode patch
+- Add Disable suggested video end screen patch
+- Add Enable old seekbar thumbnails patch
+- SponsorBlock: Rename "Preview/Recap" category to "Preview/Recap/Hook"
+- Rename Restore old seekbar thumbnails and Restore old quality menu
+- Add Enable slide to seek patch
+- Add Remove tracking query parameter patch
+- ReturnYouTubeDislike: Improve layout padding
+- Add Disable rolling number animations patch
+- Hide ads: Hide shopping links in video description
+- Hide layout components: Hide "For You" shelf in channel page
+
 ## 2023-10-27
 - ReturnYouTubeDislike: Fix dislikes not showing on Shorts
 - Hide layout components: Hide new channel watermark component
