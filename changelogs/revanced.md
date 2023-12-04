@@ -1,5 +1,8 @@
 # ReVanced changelog
 
+## 2023-12-04
+- Updated to 18.45.43
+
 ## 2023-11-25
 - Updated to 18.45.41
 - Hide layout components: Hide video quality menu footer
