@@ -32,14 +32,6 @@ jobs:
           fileName: "music*.apk"
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download ReVanced microG
-        uses: robinraju/release-downloader@v1.8
-        with:
-          repository: 'WSTxda/MicroG-RE'
-          latest: 'true'
-          fileName: "MicroG_RE_*.apk"
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Build APKs
         run: ./scripts/build.sh -m -r
               
@@ -71,7 +63,6 @@ jobs:
           files: |
             build/SHA-256-yt.txt
             build/revanced-nonroot-signed.apk
-            MicroG_RE_*.apk
 
       - uses: marvinpinto/action-automatic-releases@latest
         name: Release ReVanced Music
