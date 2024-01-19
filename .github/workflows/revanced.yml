@@ -24,6 +24,14 @@ jobs:
           fileName: "youtube.apk"
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Download ReVanced microG
+        uses: robinraju/release-downloader@v1.8
+        with:
+          repository: 'WSTxda/MicroG-RE'
+          latest: 'true'
+          fileName: "MicroG_RE_*.apk"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build APK
         run: ./scripts/build.sh -r
               
