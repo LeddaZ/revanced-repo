@@ -42,8 +42,7 @@ if [ "$revanced" = 'yes' ]; then
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar --exclude "Premium heading" \
-            -o build/revanced-nonroot.apk youtube.apk
+            -b revanced-patches.jar -o build/revanced-nonroot.apk youtube.apk
         echo "YouTube ReVanced build finished"
     else
         echo "Cannot find YouTube APK, skipping build"
