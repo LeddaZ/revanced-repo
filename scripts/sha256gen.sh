@@ -13,9 +13,9 @@ mkdir -p build/hashes
 
 # Generate SHA-256 hashes
 if [ "$revanced" = 'yes' ]; then
-    sha256sum build/yt/yt.apk >build/hashes/sha256-yt.txt
+    sha256sum build/yt/yt-signed.apk >build/hashes/sha256-yt.txt
 fi
 
 if [ "$music" = 'yes' ]; then
-    sha256sum build/ytm/ytm*.apk >build/hashes/sha256-ytm.txt
+    sha256sum build/ytm/ytm*-signed.apk >build/hashes/sha256-ytm.txt
 fi
