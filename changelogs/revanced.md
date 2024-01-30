@@ -1,5 +1,20 @@
 # ReVanced changelog
 
+## 2024-01-30
+- Updated to 19.03.35
+- Minimized playback: Fix PIP incorrectly shown for some Shorts playback
+- Return YouTube Dislike: Prevent the first Short opened from freezing the UI
+- Alternative Thumbnails: Add option to use DeArrow
+- Add Change start page patch
+- Hide ads: Hide fullscreen ads
+- Hide layout components: Hide search result recommendations
+- Add Remove viewer discretion dialog patch (a07f83f)
+- Remove Hide email address patch
+- Clarify patch descriptions
+- Enable slide to seek: Change patch default to excluded and add description disclaimer
+- Change header: Change to ReVanced borderless logo header by default
+- Other improvements to existing patches
+
 ## 2023-12-04
 - Updated to 18.45.43
 
