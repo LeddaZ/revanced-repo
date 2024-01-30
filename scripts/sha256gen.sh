@@ -9,11 +9,13 @@ while getopts mr flag; do
     esac
 done
 
+mkdir -p build/hashes
+
 # Generate SHA-256 hashes
 if [ "$revanced" = 'yes' ]; then
-    sha256sum build/revanced-nonroot-signed.apk >build/SHA-256-yt.txt
+    sha256sum build/yt/yt.apk >build/hashes/sha256-yt.txt
 fi
 
 if [ "$music" = 'yes' ]; then
-    sha256sum build/revanced-music-nonroot-*-signed.apk >build/SHA-256-ytm.txt
+    sha256sum build/ytm/ytm*.apk >build/hashes/sha256-ytm.txt
 fi

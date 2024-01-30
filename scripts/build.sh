@@ -33,7 +33,8 @@ for artifact in "${!artifacts[@]}"; do
     fi
 done
 
-mkdir -p build
+mkdir -p build/yt
+mkdir -p build/ytm
 
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
@@ -42,7 +43,7 @@ if [ "$revanced" = 'yes' ]; then
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/revanced-nonroot.apk youtube.apk
+            -b revanced-patches.jar -o build/yt/yt.apk youtube.apk
         echo "YouTube ReVanced build finished"
     else
         echo "Cannot find YouTube APK, skipping build"
@@ -59,7 +60,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/revanced-music-nonroot-armeabi-v7a.apk music-arm.apk
+            -b revanced-patches.jar -o build/ytm/ytm-armeabi-v7a.apk music-arm.apk
         echo "ReVanced Music arm build finished"
     else
         echo "Cannot find YouTube Music arm APK, skipping build"
@@ -68,7 +69,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building arm64 APK === "
     if [ -f "music-arm64.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/revanced-music-nonroot-arm64-v8a.apk music-arm64.apk
+            -b revanced-patches.jar -o build/ytm/ytm-arm64-v8a.apk music-arm64.apk
         echo "ReVanced Music arm64 build finished"
     else
         echo "Cannot find YouTube Music arm64 APK, skipping build"
@@ -77,7 +78,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86 APK ==="
     if [ -f "music-x86.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/revanced-music-nonroot-x86.apk music-x86.apk
+            -b revanced-patches.jar -o build/ytm/ytm-x86.apk music-x86.apk
         echo "ReVanced Music x86 build finished"
     else
         echo "Cannot find YouTube Music x86 APK, skipping build"
@@ -86,7 +87,7 @@ if [ "$music" = 'yes' ]; then
     echo "=== Building x86_64 APK ==="
     if [ -f "music-x86_64.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/revanced-music-nonroot-x86_64.apk music-x86_64.apk
+            -b revanced-patches.jar -o build/ytm/ytm-x86_64.apk music-x86_64.apk
         echo "ReVanced Music x86_64 build finished"
     else
         echo "Cannot find YouTube Music x86_64 APK, skipping build"

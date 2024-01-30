@@ -30,17 +30,16 @@ jobs:
       - name: Set current date as env variable
         run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV && echo "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
-      - uses: r0adkll/sign-android-release@v1
-        name: Sign APK
+      - uses: kevin-david/zipalign-sign-android-release@v1.1.1
+        name: Sign ReVanced APK
+        id: sign_yt
         with:
-          releaseDirectory: build
+          releaseDirectory: build/yt/
           signingKeyBase64: '${{ secrets.SIGNING_KEY }}'
-          output: build/release/signed
           alias: '${{ secrets.ALIAS }}'
           keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
           keyPassword: '${{ secrets.KEY_PASSWORD }}'
-        env:
-          BUILD_TOOLS_VERSION: "30.0.2"
+          zipAlign: True
           
       - name: Generate SHA256 checksums for the signed APK file
         run: ./scripts/sha256gen.sh -r
@@ -53,5 +52,5 @@ jobs:
           title: "ReVanced ${{ env.date_now }}"
           prerelease: false
           files: |
-            build/SHA-256-yt.txt
-            build/revanced-nonroot-signed.apk
+            build/hashes/sha256-yt.txt
+            ${{ steps.sign_yt.outputs.signedReleaseFile }}
