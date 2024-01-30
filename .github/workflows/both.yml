@@ -49,7 +49,6 @@ jobs:
           alias: '${{ secrets.ALIAS }}'
           keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
           keyPassword: '${{ secrets.KEY_PASSWORD }}'
-          zipAlign: true
 
       - uses: kevin-david/zipalign-sign-android-release@v1.1.1
         name: Sign ReVanced Music APKs
@@ -60,7 +59,6 @@ jobs:
           alias: '${{ secrets.ALIAS }}'
           keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
           keyPassword: '${{ secrets.KEY_PASSWORD }}'
-          zipAlign: true
 
       - name: Generate SHA256 checksums for the signed APK files
         run: ./scripts/sha256gen.sh -mr

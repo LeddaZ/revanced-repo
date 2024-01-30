@@ -41,7 +41,6 @@ jobs:
           alias: '${{ secrets.ALIAS }}'
           keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
           keyPassword: '${{ secrets.KEY_PASSWORD }}'
-          zipAlign: true
 
       - name: Generate SHA256 checksums for the signed APK files
         run: ./scripts/sha256gen.sh -m
