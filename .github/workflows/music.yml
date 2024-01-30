@@ -9,26 +9,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Setup JDK
         uses: actions/setup-java@v3
         with:
-          java-version: "17"
-          distribution: "zulu"
+          java-version: '17'
+          distribution: 
 
       - name: Download YouTube Music APKs
         uses: robinraju/release-downloader@v1.8
         with:
-          repository: ${{ github.repository }}
-          tag: 'base'
-          fileName: "music*.apk"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: '${{ github.repository }}'
+          tag: base
+          fileName: music*.apk
+          token: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: Build APKs
         run: ./scripts/build.sh -m
-              
+
       - name: Set current date as env variable
-        run: echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV && echo "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
+        run: >-
+          echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV && echo
+          "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
       - uses: kevin-david/zipalign-sign-android-release@v1.1.1
         name: Sign ReVanced Music APKs
@@ -39,17 +41,17 @@ jobs:
           alias: '${{ secrets.ALIAS }}'
           keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
           keyPassword: '${{ secrets.KEY_PASSWORD }}'
-          zipAlign: True
-          
+          zipAlign: true
+
       - name: Generate SHA256 checksums for the signed APK files
         run: ./scripts/sha256gen.sh -m
-      
+
       - uses: marvinpinto/action-automatic-releases@latest
         name: Release ReVanced Music
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "${{ env.date_now_nodashes }}-ytm"
-          title: "ReVanced Music ${{ env.date_now }}"
+          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          automatic_release_tag: '${{ env.date_now_nodashes }}-ytm'
+          title: 'ReVanced Music ${{ env.date_now }}'
           prerelease: false
           files: |
             build/hashes/sha256-ytm.txt
@@ -57,3 +59,23 @@ jobs:
             ${{ steps.sign_ytm.outputs.signedReleaseFile1 }}
             ${{ steps.sign_ytm.outputs.signedReleaseFile2 }}
             ${{ steps.sign_ytm.outputs.signedReleaseFile3 }}
+
+      - name: Get hashes
+        id: hashes
+        run: echo "ytm=$(cat build/hashes/sha256-ytm.txt)" >> $GITHUB_OUTPUT
+
+      - name: Write hashes
+        uses: DamianReeves/write-file-action@master
+        with:
+          path: hashes/ytm.txt
+          write-mode: overwrite
+          contents: |
+            ${{ steps.hashes.outputs.ytm }}
+
+      - name: Push updated hashes
+        uses: Andro999b/push@v1.3
+        with:
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          branch: main
+          force: false
+          message: 'revanced-repo: Update hashes'
