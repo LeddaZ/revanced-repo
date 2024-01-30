@@ -59,23 +59,3 @@ jobs:
             ${{ steps.sign_ytm.outputs.signedReleaseFile1 }}
             ${{ steps.sign_ytm.outputs.signedReleaseFile2 }}
             ${{ steps.sign_ytm.outputs.signedReleaseFile3 }}
-
-      - name: Get hashes
-        id: hashes
-        run: echo "ytm=$(cat build/hashes/sha256-ytm.txt)" >> $GITHUB_OUTPUT
-
-      - name: Write hashes
-        uses: DamianReeves/write-file-action@master
-        with:
-          path: hashes/ytm.txt
-          write-mode: overwrite
-          contents: |
-            ${{ steps.hashes.outputs.ytm }}
-
-      - name: Push updated hashes
-        uses: Andro999b/push@v1.3
-        with:
-          github_token: '${{ secrets.GITHUB_TOKEN }}'
-          branch: main
-          force: false
-          message: 'revanced-repo: Update hashes'

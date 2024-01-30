@@ -56,23 +56,3 @@ jobs:
           files: |
             build/hashes/sha256-yt.txt
             ${{ steps.sign_yt.outputs.signedReleaseFile }}
-
-      - name: Get hashes
-        id: hashes
-        run: echo "yt=$(cat build/hashes/sha256-yt.txt)" >> $GITHUB_OUTPUT
-
-      - name: Write hashes
-        uses: DamianReeves/write-file-action@master
-        with:
-          path: hashes/yt.txt
-          write-mode: overwrite
-          contents: |
-            ${{ steps.hashes.outputs.yt }}
-
-      - name: Push updated hashes
-        uses: Andro999b/push@v1.3
-        with:
-          github_token: '${{ secrets.GITHUB_TOKEN }}'
-          branch: main
-          force: false
-          message: 'revanced-repo: Update hashes'
