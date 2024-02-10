@@ -1,5 +1,9 @@
 # ReVanced changelog
 
+## 2024-02-10
+- Updated to 19.04.37
+- Correctly show channel page on tablet devices
+
 ## 2024-01-30
 - Updated to 19.03.35
 - Minimized playback: Fix PIP incorrectly shown for some Shorts playback
