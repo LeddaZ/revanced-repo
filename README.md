@@ -6,8 +6,8 @@ This will build non-root ReVanced and ReVanced Music with all patches that are i
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://revanced.app/patches).
 
 ### Latest supported versions
-- YouTube: `19.03.35`
-- YouTube Music: `6.36.54`
+- YouTube: `19.04.37`
+- YouTube Music: `6.37.50`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
