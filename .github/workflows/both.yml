@@ -1,4 +1,4 @@
-name: ReVanced + ReVanced Music
+name: Build ReVanced + ReVanced Music
 
 on:
   workflow_dispatch:
