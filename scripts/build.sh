@@ -39,6 +39,8 @@ mkdir -p build/yt
 mkdir -p build/ytm
 mkdir -p build/x
 
+x_excluded_patches='-e "Hide recommended users" -e "Hide view count"'
+
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
     echo "*    Building YouTube ReVanced     *"
