@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 
+          distribution: zulu
 
       - name: Download X APK
         uses: robinraju/release-downloader@v1.8
