@@ -1,0 +1,57 @@
+name: Build ReVanced X
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 
+
+      - name: Download X APK
+        uses: robinraju/release-downloader@v1.8
+        with:
+          repository: '${{ github.repository }}'
+          tag: base
+          fileName: x.apk
+          token: '${{ secrets.GITHUB_TOKEN }}'
+
+      - name: Build APKs
+        run: ./scripts/build.sh -x
+
+      - name: Set current date as env variable
+        run: >-
+          echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV && echo
+          "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
+
+      - uses: kevin-david/zipalign-sign-android-release@v1.1.1
+        name: Sign X APK
+        id: sign_x
+        with:
+          releaseDirectory: build/x/
+          signingKeyBase64: '${{ secrets.SIGNING_KEY }}'
+          alias: '${{ secrets.ALIAS }}'
+          keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
+          keyPassword: '${{ secrets.KEY_PASSWORD }}'
+
+      - name: Generate SHA256 checksums for the signed APK file
+        run: ./scripts/sha256gen.sh -x
+
+      - uses: marvinpinto/action-automatic-releases@latest
+        name: Release X
+        with:
+          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          automatic_release_tag: '${{ env.date_now_nodashes }}-x'
+          title: 'X ${{ env.date_now }}'
+          prerelease: false
+          files: |
+            build/hashes/sha256-x.txt
+            ${{ steps.sign_x.outputs.signedReleaseFile }}

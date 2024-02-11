@@ -3,10 +3,12 @@
 # Set up flags
 music=no
 revanced=no
-while getopts mr flag; do
+x=no
+while getopts mrx flag; do
     case "${flag}" in
     m) music=yes ;;
     r) revanced=yes ;;
+    x) x=yes ;;
     esac
 done
 
@@ -35,6 +37,7 @@ done
 
 mkdir -p build/yt
 mkdir -p build/ytm
+mkdir -p build/x
 
 if [ "$revanced" = 'yes' ]; then
     echo "************************************"
@@ -49,7 +52,7 @@ if [ "$revanced" = 'yes' ]; then
         echo "Cannot find YouTube APK, skipping build"
     fi
 else
-    echo "Skipping YouTube Revanced build"
+    echo "Skipping YouTube ReVanced build"
 fi
 
 if [ "$music" = 'yes' ]; then
@@ -95,4 +98,20 @@ if [ "$music" = 'yes' ]; then
     echo "ReVanced Music build finished"
 else
     echo "Skipping ReVanced Music build"
+fi
+
+if [ "$x" = 'yes' ]; then
+    echo "************************************"
+    echo "*       Building ReVanced X        *"
+    echo "************************************"
+
+    if [ -f "x.apk" ]; then
+        java -jar revanced-cli.jar patch -m revanced-integrations.apk \
+            -b revanced-patches.jar -o build/x/x.apk x.apk
+        echo "ReVanced X build finished"
+    else
+        echo "Cannot find X APK, skipping build"
+    fi
+else
+    echo "Skipping ReVanced X build"
 fi
