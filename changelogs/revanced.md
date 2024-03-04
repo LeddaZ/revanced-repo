@@ -1,5 +1,12 @@
 # ReVanced changelog
 
+## 2024-03-04
+- Spoof app version: Remove broken versions
+- Spoof signature: Fix tracking such as history or watch time
+- Change start page: Add more start pages
+- Spoof app version: Add target versions
+- Reorganize settings menu
+
 ## 2024-02-10
 - Updated to 19.04.37
 - Correctly show channel page on tablet devices
