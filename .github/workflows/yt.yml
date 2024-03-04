@@ -17,7 +17,7 @@ jobs:
           distribution: 
 
       - name: Download YouTube APK
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1.9
         with:
           repository: '${{ github.repository }}'
           tag: base

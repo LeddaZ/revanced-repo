@@ -17,7 +17,7 @@ jobs:
           distribution: zulu
 
       - name: Download YouTube APK
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1.9
         with:
           repository: '${{ github.repository }}'
           tag: base
@@ -25,7 +25,7 @@ jobs:
           token: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: Download YouTube Music APKs
-        uses: robinraju/release-downloader@v1.8
+        uses: robinraju/release-downloader@v1.9
         with:
           repository: '${{ github.repository }}'
           tag: base
