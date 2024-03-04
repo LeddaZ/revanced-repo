@@ -12,27 +12,16 @@ while getopts mrx flag; do
     esac
 done
 
-# Artifacts associative array aka dictionary
-declare -A artifacts
+for file in *integrations*; do
+    mv -- "$file" revanced-integrations.apk
+done
 
-artifacts["revanced-integrations.apk"]="revanced/revanced-integrations revanced-integrations .apk"
-artifacts["revanced-cli.jar"]="revanced/revanced-cli revanced-cli .jar"
-artifacts["revanced-patches.jar"]="revanced/revanced-patches revanced-patches .jar"
+for file in *cli*; do
+    mv -- "$file" revanced-cli.jar
+done
 
-get_artifact_download_url() {
-    # Usage: get_download_url <repo_name> <artifact_name> <file_type>
-    local api_url result
-    api_url="https://api.github.com/repos/$1/releases/latest"
-    result=$(curl -s $api_url | jq ".assets[] | select(.name | contains(\"$2\") and contains(\"$3\") and (contains(\".sig\") | not)) | .browser_download_url")
-    echo "${result:1:-1}"
-}
-
-# Fetch all the dependencies
-for artifact in "${!artifacts[@]}"; do
-    if [ ! -f "$artifact" ]; then
-        echo "Downloading $artifact"
-        curl -sLo "$artifact" $(get_artifact_download_url ${artifacts[$artifact]})
-    fi
+for file in *patches*; do
+    mv -- "$file" revanced-patches.jar
 done
 
 mkdir -p build/yt

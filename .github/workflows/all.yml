@@ -16,13 +16,33 @@ jobs:
           java-version: '17'
           distribution: zulu
 
+      - name: Download ReVanced Integrations
+        uses: robinraju/release-downloader@v1.9
+        with:
+          repository: 'ReVanced/revanced-integrations'
+          latest: true
+          fileName: '*.apk'
+
+      - name: Download ReVanced CLI
+        uses: robinraju/release-downloader@v1.9
+        with:
+          repository: 'ReVanced/revanced-cli'
+          latest: true
+          fileName: '*.jar'
+
+      - name: Download ReVanced Patches
+        uses: robinraju/release-downloader@v1.9
+        with:
+          repository: 'ReVanced/revanced-patches'
+          latest: true
+          fileName: '*.jar'
+
       - name: Download YouTube APK
         uses: robinraju/release-downloader@v1.9
         with:
           repository: '${{ github.repository }}'
           tag: base
           fileName: youtube.apk
-          token: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: Download YouTube Music APKs
         uses: robinraju/release-downloader@v1.9
@@ -30,7 +50,6 @@ jobs:
           repository: '${{ github.repository }}'
           tag: base
           fileName: music*.apk
-          token: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: Download X APK
         uses: robinraju/release-downloader@v1.9
@@ -38,7 +57,6 @@ jobs:
           repository: '${{ github.repository }}'
           tag: base
           fileName: x.apk
-          token: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: Build APKs
         run: ./scripts/build.sh -mrx
