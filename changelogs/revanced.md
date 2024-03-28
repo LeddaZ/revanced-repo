@@ -1,5 +1,19 @@
 # ReVanced changelog
 
+## 2024-03-28
+- Updated to 19.09.37
+- Client spoof: Spoof all user agents
+- Hide ads: Prevent app crash if hiding fullscreen ads is not possible
+- Fix video playback by switching to ReVanced GmsCore vendor
+- Downloads: Use external downloader when selecting `Download` in home feed flyout menu
+- Downloads: Add ability to use in-app download button
+- Hide layout components: Filter home/search results by keywords
+- Hide Shorts components: Hide like and dislike buttons
+- Hide Shorts components: Hide sound metadata label
+- Hide Shorts components: Hide title and full video link label
+- Hide Shorts components: Selectively hide Shorts for home / subscription / search
+- Remove HDR auto brightness patch
+
 ## 2024-03-04
 - Spoof app version: Remove broken versions
 - Spoof signature: Fix tracking such as history or watch time

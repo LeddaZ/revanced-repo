@@ -1,5 +1,9 @@
 # ReVanced Music changelog
 
+## 2024-03-28
+- Updated to 6.45.54
+- Bumped minimum Android version to 8.0
+
 ## 2024-03-04
 - Updated to 6.41.58
 
