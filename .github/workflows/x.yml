@@ -1,4 +1,4 @@
-name: Build ReVanced X
+name: Build X
 
 on:
   workflow_dispatch:

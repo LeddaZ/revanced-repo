@@ -93,16 +93,16 @@ fi
 
 if [ "$x" = 'yes' ]; then
     echo "************************************"
-    echo "*       Building ReVanced X        *"
+    echo "*       Building X        *"
     echo "************************************"
 
     if [ -f "x.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
             -b revanced-patches.jar -o build/x/x.apk x.apk
-        echo "ReVanced X build finished"
+        echo "X build finished"
     else
         echo "Cannot find X APK, skipping build"
     fi
 else
-    echo "Skipping ReVanced X build"
+    echo "Skipping X build"
 fi

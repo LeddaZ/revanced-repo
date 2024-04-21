@@ -1,14 +1,14 @@
 # ReVanced Repo ![downloadCount](https://img.shields.io/github/downloads/LeddaZ/revanced-repo/total?color=blue&label=Downloads)
-This repo template will allow you to build non-root ReVanced, ReVanced Music and ReVanced X using GitHub Actions. This will help people who don't want to setup build environments on their machines.
+This repo template will allow you to build non-root ReVanced, ReVanced Music and X using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
-This will build non-root ReVanced and ReVanced Music with all patches that are included by default. ReVanced X will be built with all patches except `Hide recommended users` and `Hide view count`.
+This will build non-root ReVanced and ReVanced Music with all patches that are included by default. X will be built with all patches except `Hide recommended users` and `Hide view count`.
 
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://revanced.app/patches).
 
 ### Latest supported versions
-- YouTube: `19.09.37`
-- YouTube Music: `6.45.54`
-- X: `10.34.0-release.0`
+- YouTube: `19.11.43`
+- YouTube Music: `6.48.51`
+- X: `10.37.0-release.0`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
