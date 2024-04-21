@@ -1,5 +1,23 @@
 # ReVanced changelog
 
+## 2024-04-21
+- Updated to 19.11.43
+- Alternative thumbnails: Selectively enable for home / subscription / search
+- GmsCore: Require ignoring battery optimizations
+- GmsCore support: Prompt to disable battery optimizations, if not done already
+- Hide ads: rename Hide paid content to Hide paid promotion label
+- Hide load more button: Include patch with Hide layout components, and hide button only in search feed
+- Hide Shorts components: Correctly hide Shorts if navigation tab is changed using device back button
+- Player flyout menu: Add hide Lock screen menu
+- Spoof device dimensions: Warn about potential performance issues
+- Hide layout components: Add option to hide horizontal shelves
+- Hide layout components: Hide playables
+- Hide Shorts components: Hide Shop, Location and Save sound to playlist buttons
+- Hide Shorts components: Hide tagged products, hide search suggestions
+- Swipe controls: Save and restore brightness and add auto-brightness toggle
+- Add 'About' preference to settings menu
+- Match overlay icons style to YouTube
+
 ## 2024-03-28
 - Updated to 19.09.37
 - Client spoof: Spoof all user agents

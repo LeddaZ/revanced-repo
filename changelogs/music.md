@@ -1,5 +1,10 @@
 # ReVanced Music changelog
 
+## 2024-04-21
+- Updated to 6.48.51
+- Remove upgrade button: Fix compatibility with latest versions
+- Hide 'Get Music Premium' label: Remove occurences of label in settings
+
 ## 2024-03-28
 - Updated to 6.45.54
 - Bumped minimum Android version to 8.0
