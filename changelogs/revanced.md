@@ -1,5 +1,17 @@
 # ReVanced changelog
 
+## 2024-05-21
+- **Spoof client**: Spoof client to fix playback
+- **Hide video action buttons**: Remove obsolete hide Shop button
+- **Player flyout menu**: Remove obsolete Hide report menu
+- **Restore old video quality menu**: Show advanced quality menu in Shorts quality flyout
+- **SponsorBlock**: Show correct segment times if video is over 24 hours in length
+- **Comments**: Add option to hide timestamp and emoji buttons
+- **Hide ads**: Add option to hide the 'Visit store' button on channel pages
+- **Hide Shorts components**: Hide 'Buy super thanks' button
+- **Hide Shorts components**: Hide like / dislike button in video ads
+- **Navigation buttons**: Add option to hide navigation button labels
+
 ## 2024-04-21
 - Updated to 19.11.43
 - Alternative thumbnails: Selectively enable for home / subscription / search

@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2024-05-21
+- Updated to 7.01.52
+
 ## 2024-04-21
 - Updated to 6.48.51
 - Remove upgrade button: Fix compatibility with latest versions
