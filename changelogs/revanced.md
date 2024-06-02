@@ -1,5 +1,14 @@
 # ReVanced changelog
 
+## 2024-06-02
+- Updated to 19.16.39
+- **Spoof client**: Spoof iOS client model to fix various side effects
+- **Spoof client**: Allow swipe gestures to enter/exit fullscreen when spoofing with Android VR client
+- **Spoof client**: Improve Android spoofing
+- **Spoof client**: Restore playback speed menu when spoofing to an iOS client
+- **Hide layout components**: Disable like / subscribe button glow animation
+- **Playback speed**: Add option to show speed dialog button in video player
+
 ## 2024-05-21
 - **Spoof client**: Spoof client to fix playback
 - **Hide video action buttons**: Remove obsolete hide Shop button
