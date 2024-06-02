@@ -31,9 +31,9 @@ mkdir -p build/x
 x_excluded_patches='-e "Hide recommended users" -e "Hide view count"'
 
 if [ "$revanced" = 'yes' ]; then
-    echo "************************************"
-    echo "*    Building YouTube ReVanced     *"
-    echo "************************************"
+    echo "**************************"
+    echo "*    Building YouTube    *"
+    echo "**************************"
 
     if [ -f "youtube.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
@@ -47,9 +47,9 @@ else
 fi
 
 if [ "$music" = 'yes' ]; then
-    echo "************************************"
-    echo "*     Building ReVanced Music      *"
-    echo "************************************"
+    echo "********************************"
+    echo "*    Building YouTube Music    *"
+    echo "********************************"
 
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
@@ -92,9 +92,9 @@ else
 fi
 
 if [ "$x" = 'yes' ]; then
-    echo "************************************"
-    echo "*       Building X        *"
-    echo "************************************"
+    echo "********************"
+    echo "*    Building X    *"
+    echo "********************"
 
     if [ -f "x.apk" ]; then
         java -jar revanced-cli.jar patch -m revanced-integrations.apk \
