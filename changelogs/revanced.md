@@ -1,5 +1,15 @@
 # ReVanced changelog
 
+## 2024-07-12
+- **Client spoof**: Correctly play more livestreams using Android VR
+- **Hide description components**: Replace **Hide game section** and **Hide music section** with **Hide attributes section**
+- **Rename Minimized playback** to **Remove background playback restrictions**
+- **Comments**: Add **Hide 'Create a Short' button**, **Hide Thanks button** and **Hide 'Comments by members' header** options
+- **Miniplayer**: Rename **Tablet mini player** and allow selecting the style of the in-app miniplayer
+- **Hide layout components**: Detect if a keyword filter hides all videos
+- **Settings**: Move some settings to different menus, adjust default setting values
+- **SponsorBlock**: Skip segments when casting
+
 ## 2024-06-02
 - Updated to 19.16.39
 - **Spoof client**: Spoof iOS client model to fix various side effects
