@@ -8,7 +8,7 @@ You can modify the `scripts/build.sh` script to choose the patches you want. A l
 ### Latest supported versions
 - YouTube: `19.16.39`
 - YouTube Music: `7.03.52`
-- X: `10.49.0-release.0`
+- X: `10.53.0-release.1`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
