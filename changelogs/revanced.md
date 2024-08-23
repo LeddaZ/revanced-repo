@@ -1,5 +1,16 @@
 # ReVanced changelog
 
+## 2024-08-23
+- **Hide keyword content**: Do not hide flyout menu
+- **SponsorBlock**: Correctly show minute timestamp when creating a new segment
+- **SponsorBlock**: Improve create segment manual seek accuracy
+- **Spoof client**: Restore missing high qualities by spoofing the iOS client user agent
+- **Spoof client**: Restore livestream audio only playback with iOS spoofing
+- **Description components**: Add Hide 'Key concepts' section option
+- Add **Bypass image region restrictions** patch
+- **GmsCore support**: Fix notifications not working by using the correct permissions
+- Add **Check watch history domain name resolution** patch
+
 ## 2024-07-12
 - **Client spoof**: Correctly play more livestreams using Android VR
 - **Hide description components**: Replace **Hide game section** and **Hide music section** with **Hide attributes section**
