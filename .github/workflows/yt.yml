@@ -70,7 +70,7 @@ jobs:
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
           automatic_release_tag: '${{ env.date_now_nodashes }}-yt'
-          title: 'ReVanced Music ${{ env.date_now }}'
+          title: 'ReVanced ${{ env.date_now }}'
           prerelease: false
           files: |
             build/hashes/sha256-yt.txt
