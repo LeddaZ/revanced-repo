@@ -1,5 +1,8 @@
 # X changelog
 
+## 2024-09-19
+- Updated to 10.58.0-release.0
+
 ## 2024-08-23
 - Updated to 10.55.1-release.0
 

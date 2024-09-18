@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2024-09-19
+- Updated to 7.19.51
+
 ## 2024-07-12
 - Updated to 7.03.52
 - Rename **Minimized playback** to **Remove background playback restrictions**

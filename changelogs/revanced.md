@@ -1,5 +1,13 @@
 # ReVanced changelog
 
+## 2024-09-19
+- **Return YouTube Dislike**: Show estimated like count for videos with hidden likes
+- Fix issues related to playback by replacing streaming data
+- **Hide Shorts components**: Hide `Use this sound` button
+- **Keyword filter**: Add syntax to match whole keywords and not substrings
+- **Spoof client**: Allow forcing AVC codec with iOS
+- Add donation link to settings about screen
+
 ## 2024-08-23
 - **Hide keyword content**: Do not hide flyout menu
 - **SponsorBlock**: Correctly show minute timestamp when creating a new segment
