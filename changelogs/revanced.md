@@ -1,5 +1,14 @@
 # ReVanced changelog
 
+## 2024-10-08
+- **Spoof video streams**: Change default client type to Android VR
+- **SponsorBlock**: Fade out SB buttons without overlapping other buttons
+- Show video chapter titles without clipping when overlay buttons are enabled
+- **Disable precise seeking gesture**: Hide "pull up" label that shows up when swiping
+- **Hide Shorts components**: Add Hide save music, Hide stickers
+- **Hide Shorts components**: Add patch option to hide Shorts app shortcut (long press app icon)
+- **Hide Shorts components**: Add patch option to hide Shorts from app launcher widget
+
 ## 2024-09-19
 - **Return YouTube Dislike**: Show estimated like count for videos with hidden likes
 - Fix issues related to playback by replacing streaming data

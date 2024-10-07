@@ -1,5 +1,9 @@
 # X changelog
 
+## 2024-10-08
+- Updated to 10.61.1-release.0
+- Removed **Open links with app chooser** patch (not compatible with latest versions)
+
 ## 2024-09-19
 - Updated to 10.58.0-release.0
 
