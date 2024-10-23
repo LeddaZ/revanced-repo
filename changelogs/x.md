@@ -1,5 +1,9 @@
 # X changelog
 
+## 2024-10-23
+- Updated to 10.63.1-release.0
+- Add **Change link sharing domain patch**
+
 ## 2024-10-08
 - Updated to 10.61.1-release.0
 - Removed **Open links with app chooser** patch (not compatible with latest versions)

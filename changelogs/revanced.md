@@ -1,5 +1,16 @@
 # ReVanced changelog
 
+## 2024-10-23
+- Updated to 19.34.42
+- **GmsCore support**: Add more replacements
+- **GmsCore support**: Remove unclear patch changes
+- **Spoof video streams**: Fix playback for Android VR by removing invalid body as well
+- **Hide layout components**: Add option to hide YouTube Doodles
+- **Hide Shorts components**: Add option to hide Use template, Upcoming, Green screen buttons
+- **Hide Shorts components**: Add option to hide like fountain
+- **Hide Shorts components**: Hide Hashtag button
+- **GmsCore support**: Improve performance by using hashsets
+
 ## 2024-10-08
 - **Spoof video streams**: Change default client type to Android VR
 - **SponsorBlock**: Fade out SB buttons without overlapping other buttons
