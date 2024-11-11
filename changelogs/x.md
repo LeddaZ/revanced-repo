@@ -1,5 +1,8 @@
 # X changelog
 
+## 2024-11-11
+- Updated to 10.65.2-release.0
+
 ## 2024-10-23
 - Updated to 10.63.1-release.0
 - Add **Change link sharing domain patch**

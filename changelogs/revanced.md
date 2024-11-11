@@ -1,5 +1,31 @@
 # ReVanced changelog
 
+## 2024-11-11
+- Updated to 19.43.41
+- **Copy video URL**: Support A/B player layout
+- **Hide ads**: Hide new types of ads
+- **Hide layout components**: Remove obsolete `Hide gray separator`
+- **Hide layout components**: Hide player shopping shelf
+- **Playback speed**: Restore old playback speed menu
+- **Playback speed**: Remember playback speed with new speed menu
+- **Remove background playback restrictions**: Enable for Shorts as well
+- **Return YouTube Dislike**: Use latest separator height
+- **Seekbar**: Use latest shade of YouTube red
+- **Settings**: Use multiline preference title for localized languages
+- **SponsorBlock**: Show correct segment behavior in settings UI after importing
+- **Spoof app version**: Remove obsolete 17.33.42 spoof target
+- Merge **Restore old seekbar thumbnails** into **Seekbar thumbnails**
+- Merge multiple layout patches into **Hide Layout Components**
+- Merge multiple player overlay patches into **Hide player overlay buttons**
+- **Hide player flyout menu items**: Hide stable volume
+- **Miniplayer**: Add horizontal drag gesture
+- **Player flyout menu**: Hide sleep timer
+- Add **Seekbar thumbnails** patch
+- Add **Shorts autoplay** patch
+- **Return YouTube Dislike**: Show Shorts dislikes with new A/B button icons
+- **Remember video quality**: Correctly set default quality when changing from a low quality video
+- **Playback speed**: Remember playback speed when using non 1.0x default speed
+
 ## 2024-10-23
 - Updated to 19.34.42
 - **GmsCore support**: Add more replacements
