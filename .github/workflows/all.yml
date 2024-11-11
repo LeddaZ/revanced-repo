@@ -17,14 +17,14 @@ jobs:
           distribution: zulu
 
       - name: Download ReVanced CLI
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: 'ReVanced/revanced-cli'
           latest: true
           fileName: '*.jar'
 
       - name: Download ReVanced Patches
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: 'ReVanced/revanced-patches'
           latest: true
@@ -32,21 +32,21 @@ jobs:
           fileName: '*.rvp'
 
       - name: Download YouTube APK
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: '${{ github.repository }}'
           tag: base
           fileName: youtube.apk
 
       - name: Download YouTube Music APKs
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: '${{ github.repository }}'
           tag: base
           fileName: music*.apk
 
       - name: Download X APK
-        uses: robinraju/release-downloader@v1.9
+        uses: robinraju/release-downloader@v1.11
         with:
           repository: '${{ github.repository }}'
           tag: base
