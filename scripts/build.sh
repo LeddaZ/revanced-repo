@@ -12,16 +12,12 @@ while getopts mrx flag; do
     esac
 done
 
-for file in *integrations*; do
-    mv -- "$file" revanced-integrations.apk
-done
-
 for file in *cli*; do
     mv -- "$file" revanced-cli.jar
 done
 
 for file in *patches*; do
-    mv -- "$file" revanced-patches.jar
+    mv -- "$file" revanced-patches.rvp
 done
 
 mkdir -p build/yt
@@ -34,8 +30,8 @@ if [ "$revanced" = 'yes' ]; then
     echo "**************************"
 
     if [ -f "youtube.apk" ]; then
-        java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/yt/yt.apk youtube.apk
+        java -jar revanced-cli.jar patch -p revanced-patches.rvp \
+            -o build/yt/yt.apk youtube.apk
         echo "YouTube ReVanced build finished"
     else
         echo "Cannot find YouTube APK, skipping build"
@@ -51,8 +47,8 @@ if [ "$music" = 'yes' ]; then
 
     echo "=== Building arm APK ==="
     if [ -f "music-arm.apk" ]; then
-        java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/ytm/ytm-armeabi-v7a.apk music-arm.apk
+        java -jar revanced-cli.jar patch -p revanced-patches.rvp \
+            -o build/ytm/ytm-armeabi-v7a.apk music-arm.apk
         echo "ReVanced Music arm build finished"
     else
         echo "Cannot find YouTube Music arm APK, skipping build"
@@ -60,8 +56,8 @@ if [ "$music" = 'yes' ]; then
 
     echo "=== Building arm64 APK === "
     if [ -f "music-arm64.apk" ]; then
-        java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/ytm/ytm-arm64-v8a.apk music-arm64.apk
+        java -jar revanced-cli.jar patch -p revanced-patches.rvp \
+            -o build/ytm/ytm-arm64-v8a.apk music-arm64.apk
         echo "ReVanced Music arm64 build finished"
     else
         echo "Cannot find YouTube Music arm64 APK, skipping build"
@@ -69,8 +65,8 @@ if [ "$music" = 'yes' ]; then
 
     echo "=== Building x86 APK ==="
     if [ -f "music-x86.apk" ]; then
-        java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/ytm/ytm-x86.apk music-x86.apk
+        java -jar revanced-cli.jar patch -p revanced-patches.rvp \
+            -o build/ytm/ytm-x86.apk music-x86.apk
         echo "ReVanced Music x86 build finished"
     else
         echo "Cannot find YouTube Music x86 APK, skipping build"
@@ -78,8 +74,8 @@ if [ "$music" = 'yes' ]; then
 
     echo "=== Building x86_64 APK ==="
     if [ -f "music-x86_64.apk" ]; then
-        java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -o build/ytm/ytm-x86_64.apk music-x86_64.apk
+        java -jar revanced-cli.jar patch -p revanced-patches.rvp \
+            -o build/ytm/ytm-x86_64.apk music-x86_64.apk
         echo "ReVanced Music x86_64 build finished"
     else
         echo "Cannot find YouTube Music x86_64 APK, skipping build"
@@ -95,8 +91,8 @@ if [ "$x" = 'yes' ]; then
     echo "********************"
 
     if [ -f "x.apk" ]; then
-        java -jar revanced-cli.jar patch -m revanced-integrations.apk \
-            -b revanced-patches.jar -e "Hide recommended users" \
+        java -jar revanced-cli.jar patch -p revanced-patches.rvp \
+            --exclusive -e "Hide recommended users" \
             -e "Hide view count" -o build/x/x.apk x.apk
         echo "X build finished"
     else

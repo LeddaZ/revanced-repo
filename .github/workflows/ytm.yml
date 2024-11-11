@@ -16,13 +16,6 @@ jobs:
           java-version: '17'
           distribution: zulu
 
-      - name: Download ReVanced Integrations
-        uses: robinraju/release-downloader@v1.9
-        with:
-          repository: 'ReVanced/revanced-integrations'
-          latest: true
-          fileName: '*.apk'
-
       - name: Download ReVanced CLI
         uses: robinraju/release-downloader@v1.9
         with:
@@ -35,7 +28,7 @@ jobs:
         with:
           repository: 'ReVanced/revanced-patches'
           latest: true
-          fileName: '*.jar'
+          fileName: '*.rvp'
 
       - name: Download YouTube Music APKs
         uses: robinraju/release-downloader@v1.9
