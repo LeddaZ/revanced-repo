@@ -92,8 +92,7 @@ if [ "$x" = 'yes' ]; then
 
     if [ -f "x.apk" ]; then
         java -jar revanced-cli.jar patch -p revanced-patches.rvp \
-            --exclusive -e "Hide recommended users" \
-            -e "Hide view count" -o build/x/x.apk x.apk
+            --di 134 --di 137 -o build/x/x.apk x.apk
         echo "X build finished"
     else
         echo "Cannot find X APK, skipping build"
