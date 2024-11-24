@@ -1,5 +1,16 @@
 # ReVanced changelog
 
+## 2024-11-24
+- Updated to 19.45.38
+- **Player controls**: Show player control buttons with A/B layout
+- **Change header**: Apply header changes to A/B layout
+- **Hide Shorts components**: Do not hide Shorts action buttons on app first launch
+- **Playback speed**: Add `Auto` speed. Always override speed if default is set to 1.0x
+- **SponsorBlock**: Fix create new segment crash on tablet custom roms
+- **Spoof app version**: Adjust legacy spoof targets
+- **Spoof app version**: Remove broken spoof targets when patching 19.25+
+- **Miniplayer**: Add option to disable miniplayer 
+
 ## 2024-11-11
 - Updated to 19.43.41
 - **Copy video URL**: Support A/B player layout

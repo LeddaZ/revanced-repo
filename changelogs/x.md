@@ -1,5 +1,9 @@
 # X changelog
 
+## 2024-11-24
+- Updated to 10.68.1-release.0
+- Fixed missing patches in previous build
+
 ## 2024-11-11
 - Updated to 10.65.2-release.0
 
