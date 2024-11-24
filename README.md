@@ -1,6 +1,9 @@
 # ReVanced Repo ![downloadCount](https://img.shields.io/github/downloads/LeddaZ/revanced-repo/total?color=blue&label=Downloads)
 This repo template will allow you to build non-root ReVanced, ReVanced Music and X using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
+> [!warning]
+> These are **unofficial** builds. The ReVanced team is not responsible for issues derived from unofficial apps.
+
 ### Excluded patches
 - YouTube Music: `Permanent shuffle`
 - X: `Hide recommended users` and `Hide view count`
