@@ -28,7 +28,6 @@ jobs:
         with:
           repository: 'ReVanced/revanced-patches'
           latest: true
-          preRelease: true
           fileName: '*.rvp'
 
       - name: Download YouTube APK
