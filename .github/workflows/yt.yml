@@ -35,7 +35,7 @@ jobs:
         with:
           repository: '${{ github.repository }}'
           tag: base
-          fileName: youtube.apk
+          fileName: yt.apk
 
       - name: Build APKs
         run: ./scripts/build.sh -r

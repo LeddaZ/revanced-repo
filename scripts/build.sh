@@ -29,9 +29,9 @@ if [ "$revanced" = 'yes' ]; then
     echo "*    Building YouTube    *"
     echo "**************************"
 
-    if [ -f "youtube.apk" ]; then
+    if [ -f "yt.apk" ]; then
         java -jar revanced-cli.jar patch -p revanced-patches.rvp \
-            -o build/yt/yt.apk youtube.apk
+            -o build/yt/yt.apk yt.apk
         echo "YouTube ReVanced build finished"
     else
         echo "Cannot find YouTube APK, skipping build"

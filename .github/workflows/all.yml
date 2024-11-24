@@ -35,7 +35,7 @@ jobs:
         with:
           repository: '${{ github.repository }}'
           tag: base
-          fileName: youtube.apk
+          fileName: yt.apk
 
       - name: Download YouTube Music APKs
         uses: robinraju/release-downloader@v1.11
