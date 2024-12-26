@@ -2,7 +2,7 @@
 This repo template will allow you to build non-root ReVanced, ReVanced Music and X using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
 > [!warning]
-> These are **unofficial** builds. The ReVanced team is not responsible for issues derived from unofficial apps.
+> These are **unofficial** builds. The ReVanced team is not responsible for issues derived from unofficial apps and I'm not part of the ReVanced team.
 
 ### Excluded patches
 - YouTube Music: `Permanent shuffle`
