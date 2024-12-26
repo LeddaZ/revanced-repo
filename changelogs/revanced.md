@@ -1,5 +1,36 @@
 # ReVanced changelog
 
+## 2024-12-26
+- Updated to 19.47.53
+- **Hide Shorts components**: Add missing options to patch
+- **Playback speed**: Allow long press 2x speed when using custom playback speeds
+- **Settings**: Do not clip settings menus when using an Android 15 device
+- **Settings**: Show navigation back button in setting sub menus
+- **Spoof video streams**: Update `Force AVC` client data
+- **Spoof video streams**: Allow picking a default audio language track
+- **Spoof video streams**: Fix error toast that is sometimes shown
+- **Spoof video streams**: Resolve playback of age restricted videos
+- **Spoof video streams**: Remove iOS, add clients Android TV and Android Creator
+- **Spoof video streams**: Add iOS TV client
+- **Spoof video streams**: Use 2 letter device language code
+- **Spoof video streams**: Use Android VR authentication if using default audio language
+- **Theme**: Apply custom seekbar color to splash screen animation
+- **Theme**: Use dark theme color for status and navigation bar
+- **Spoof app version**: Update spoof target to resolve library tab crashes
+- Add **Open videos fullscreen** patch
+- **Hide ads**: Hide new type of featured promotions
+- **Comments**: Add `Hide 'Chat summary'`
+- **Hide feed components**: Remove obsolete `Hide search result shelf header` option
+- **Navigation buttons**: Add options to disable translucent status bar and navigation bar
+- Add **Force original audio** patch
+- Add **Open Shorts in regular player** patch
+- **Hide layout components**: Hide new kind of community post
+- **Hide layout components**: Don't hide Shorts channel bar when toggling for video player
+- **Miniplayer**: Use estimated maximum on screen size for devices with low density screens
+- **SponsorBlock**: Show create new segment error messages using a dialog
+- **SponsorBlock**: Show a toast and not a dialog if segment submitted successfully
+- Do not reset playback speed to 1.0x after closing comment thread (Fixes stock YouTube bug)
+
 ## 2024-11-24
 - Updated to 19.45.38
 - **Player controls**: Show player control buttons with A/B layout

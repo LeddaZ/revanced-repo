@@ -5,7 +5,6 @@ This repo template will allow you to build non-root ReVanced, ReVanced Music and
 > These are **unofficial** builds. The ReVanced team is not responsible for issues derived from unofficial apps and I'm not part of the ReVanced team.
 
 ### Excluded patches
-- YouTube Music: `Permanent shuffle`
 - X: `Hide recommended users` and `Hide view count`
 
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://revanced.app/patches).

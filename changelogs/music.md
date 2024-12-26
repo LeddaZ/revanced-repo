@@ -1,5 +1,11 @@
 # ReVanced Music changelog
 
+## 2024-12-26
+- Updated to 7.31.51
+- **Hide category bar**: Add support for latest release
+- Add **Spoof video streams** patch to fix playback
+- Add **Spoof client** patch to fix playback
+
 ## 2024-11-24
 - Updated to 7.28.51
 
