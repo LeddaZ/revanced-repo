@@ -11,13 +11,13 @@ This repo template will allow you to build non-root ReVanced, ReVanced Music and
 You can modify the `scripts/build.sh` script to choose the patches you want. A list of available patches and their descriptions can be found [here](https://revanced.app/patches).
 
 ### Supported versions
-- YouTube: `19.45.38`
-- YouTube Music: `7.28.51`
-- X: `10.68.1-release.0`
+- YouTube: `19.47.53`
+- YouTube Music: `7.31.51`
+- X: `10.72.1-release.0`
 
 ## How to setup
 1. Fork or create a new repository using this repository as a template ([Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)). DO NOT FORK if you need to set the new repo to private.
-2. [Set up signing](signing.md) (if you don't want to, you can remove the signing part in the three workflows)
+2. [Set up signing](signing.md) (if you don't want to, you can remove the signing part in the workflows)
 3. Download the needed APKs from APKMirror and upload them to a new release with the `base` tag ([Step 1](images/release_1.png), [Step 2](images/release_2.png)). The names must be `yt.apk`, `music-arm.apk`, `music-arm64.apk`, `music-x86.apk`, `music-x86_64.apk`, `x.apk`.
 
 ## How to build
