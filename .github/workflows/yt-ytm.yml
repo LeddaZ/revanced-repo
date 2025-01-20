@@ -52,7 +52,7 @@ jobs:
           echo "date_now=$(date +'%Y-%m-%d')" >> $GITHUB_ENV && echo
           "date_now_nodashes=$(date +'%Y%m%d')" >> $GITHUB_ENV
 
-      - uses: kevin-david/zipalign-sign-android-release@v2.0.1
+      - uses: kevin-david/zipalign-sign-android-release@v2.0.2
         name: Sign ReVanced APK
         id: sign_yt
         with:
@@ -62,7 +62,7 @@ jobs:
           keyStorePassword: '${{ secrets.KEY_STORE_PASSWORD }}'
           keyPassword: '${{ secrets.KEY_PASSWORD }}'
 
-      - uses: kevin-david/zipalign-sign-android-release@v2.0.1
+      - uses: kevin-david/zipalign-sign-android-release@v2.0.2
         name: Sign ReVanced Music APKs
         id: sign_ytm
         with:
