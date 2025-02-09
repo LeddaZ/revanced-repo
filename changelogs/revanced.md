@@ -1,5 +1,32 @@
 # ReVanced changelog
 
+## 2025-02-09
+- **Force original audio**: If stream spoofing to Android then show a summary text why force audio is not available
+- **Spoof video streams**: Ignore harmless error toast if hide ads is disabled
+- **Swipe controls**: Add option to enable/disable fullscreen swipe to next video
+- **Hide Shorts components**: Add option to hide Shorts in watch history
+- **Spoof app version**: Add `Restore old navigation and toolbar icons`
+- Add **Change form factor** patch
+- Add **Exit fullscreen mode** patch
+- Add in app option to select a preferred language for ReVanced specific text
+- **Spoof video streams**: Add `Android Creator`
+- **Spoof video streams**: Resolve playback issues after changing from cellular to wifi
+- **Spoof video streams**: Update client user-agent
+- **Hide feed components**: Handle new type of surveys
+- **Playback speed**: Add option to change 2x tap and hold speed
+- **Settings**: Add option to use new Cairo settings menus
+- **Hide ads**: fix `Hide the Visit store button on channel pages` not working
+- **Hide ads**: Hide new types of tablet ads
+- **Hide layout components**: Hide new kind of community post
+- **Spoof video streams**: Update settings side effects summary text
+- **Hide ads**: Add `Hide end screen store banner`
+- **Hide video description components**: Add `Hide How this content was made` section
+- **Theme**: Add option to use custom seekbar accent color
+- Add patch **Disable HDR video**
+- **Enable slide to seek**: Change patch to default include
+- **Theme**: Use custom seekbar color for cairo startup animation
+- **Change start page**: Add additional start pages
+
 ## 2024-12-26
 - Updated to 19.47.53
 - **Hide Shorts components**: Add missing options to patch

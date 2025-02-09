@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2025-02-09
+- Updated to 8.05.50
+
 ## 2024-12-26
 - Updated to 7.31.51
 - **Hide category bar**: Add support for latest release
