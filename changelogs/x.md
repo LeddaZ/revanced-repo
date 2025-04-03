@@ -1,5 +1,8 @@
 # X changelog
 
+## 2025-04-03
+- Updated to 10.87.0-release.0
+
 ## 2025-02-09
 - Updated to 10.79.0-release.0
 

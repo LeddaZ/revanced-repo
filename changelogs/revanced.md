@@ -1,5 +1,35 @@
 # ReVanced changelog
 
+## 2025-04-03
+- Updated to 20.07.39
+- **Spoof video streams**: Change default client to `Android TV`
+- **Spoof video streams**: Resolve playback issues with dynamic player config
+- **Return YouTube Dislike**: add `Show estimated likes setting`
+- **Return YouTube Dislike**: Use correct number formatting if using a different ReVanced language
+- **SponsorBlock**: Redesign skip buttons
+- **SponsorBlock**: Add opacity setting to category segment colors 
+- **Hide filter bar**: Fix `Hide in feed` not working in subscriptions feed
+- **Hide layout components**: Do not hide `Show anyway` button in search results
+- **Hide layout components**: Do not hide Movie/Courses start page content if `Hide horizontal shelves` is enabled
+- **Hide player components**: Show correct end video thumbnail if `Hide end screen suggested video` is enabled
+- **Hide video action buttons**: Move `Disable Like and Subscribe glow` to action buttons settings menu
+- **Spoof app version**: Force old settings menus if spoofing to older app targets
+- **Spoof app version**: Remove obsolete 18.x targets and broken targets that YouTube no longer supports
+- **Spoof app version**: Change oldest spoof target to 19.01.34
+- Fix player button fade out animations
+- **Navigation buttons**: Add `Hide notifications` setting
+- **Navigation buttons**: Add user dialog message to `Disable translucent status bar` 
+- **Swipe controls**: Swipe controls UI improvements
+- **Change form factor**: Restore `Automotive` form factor watch history menu, channel pages, and community
+- **Hide ads**: Hide new type of buttoned ad
+- **Theme**: Resolve dark mode startup crash with Android 9.0
+- Change language settings menu to use native language names
+- **Remember video quality**: Add separate Shorts default quality settings
+- Combine **Restore old video quality menu** and **Remember video quality** into **Video quality patch**
+- **Settings**: System navigation bar is located above the settings ui on Android 15+
+- **Comments**: Add `Hide AI Comments summary`
+- **Video description**: Add `Hide AI-generated video summary`
+
 ## 2025-02-09
 - **Force original audio**: If stream spoofing to Android then show a summary text why force audio is not available
 - **Spoof video streams**: Ignore harmless error toast if hide ads is disabled

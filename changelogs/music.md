@@ -1,5 +1,8 @@
 # ReVanced Music changelog
 
+## 2025-04-03
+- Updated to 8.05.51
+
 ## 2025-02-09
 - Updated to 8.05.50
 
