@@ -1,5 +1,27 @@
 # ReVanced changelog
 
+## 2025-06-28
+### **New Features & Improvements**
+- Added **new hiding options** for various UI elements (video action buttons, Shorts components, player overlays, ticket shelf, etc.)
+- **Swipe controls** enhanced with customizable sensitivity, colors, and vertical progress bar option
+- **Settings improvements**: Added search, color picker, icons, modern dialogs, scrollable content, and debug log sharing
+- **Playback enhancements**: Fixed background playback restrictions, Shorts autoplay, and added disable haptic feedback
+- **Spoofing & compatibility**: Better Android spoof handling, GmsCore troubleshooting, and support for **YouTube v20.12+**
+- **Return YouTube Dislike (RYD)**: Fixed Shorts dislike updates and A/B layout support
+- **Seekbar patches** merged and fixed for feed/Shorts
+- **Theme options**: Added black/white splash screen animation
+
+### **Bug Fixes**
+- Fixed **Shorts components hiding** (action buttons, comment panel, sound/template buttons)
+- Fixed **video description hiding** (music/game links, attributes)
+- Fixed **player overlay** and related video hiding in fullscreen
+- Fixed **auto-captions** hiding in newer versions
+- Patched **new ad types** (product ads, general ads)
+- Resolved **PiP button** issues after screen unlock
+
+### **Removals & Deprecations**  
+- Removed broken options (e.g., comments emoji picker)
+
 ## 2025-04-03
 - Updated to 20.07.39
 - **Spoof video streams**: Change default client to `Android TV`
