@@ -92,7 +92,7 @@ if [ "$x" = 'yes' ]; then
 
     if [ -f "x.apk" ]; then
         java -jar revanced-cli.jar patch -p revanced-patches.rvp \
-            --di 158 --di 161 -o build/x/x.apk x.apk
+            --di 162 --di 165 -o build/x/x.apk x.apk
         echo "X build finished"
     else
         echo "Cannot find X APK, skipping build"
