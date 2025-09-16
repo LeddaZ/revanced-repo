@@ -1,5 +1,9 @@
 # ReVanced Music changelog
 
+## 2025-09-16
+- Downgraded to 7.29.52
+- Fixed 400 error
+
 ## 2025-04-03
 - Updated to 8.05.51
 

@@ -1,5 +1,29 @@
 # ReVanced changelog
 
+## 2025-09-16
+- **Hide layout components**: Add Hide in history option to filter bar
+- **SponsorBlock**: Add "Undo automatic skip toast"
+- **Hide layout components**: Do not hide playlist sort button if `Hide AI comments summary` is on
+- **Playback speed**: Allow custom speeds with 0.01x precision
+- **Slide to seek**: Show tap and hold 2x speed overlay when active
+- **Change header**: Add in-app setting to change the app header
+- **Hide layout components**: Add Hide channel links preview and Hide `Visit Community` button in channel page
+- Add **Disable two-finger tap gesture for skipping chapters**
+- **External downloads**: Improve the selection of the external downloader package
+- Force original audio**: Disable a/b feature flag that forces localized audio
+- **Video quality**: Use 1080p enhanced bitrate for Premium users
+- **Playback speed**: Add "Restore old playback speed menu" option
+- **Video quality**: Add player button to change video quality
+- **Video quality**: Show FHD+ icon for 1080p 60fps enhanced bitrate
+ - **Hide player flyout menu items**: Add option to hide quality flyout menu
+- **Hide video action buttons**: Add "Hide Hype button" setting
+- **Hide video action buttons**: Add "Hide Promote button" setting
+- **Playback speed**: Show current playback speed on player speed dialog button
+- Add **Disable sign in to TV popup** patch
+- **SponsorBlock**: Add `Hook` segment category
+- **Spoof video streams**: Add iPadOS client
+- Many bugfixes
+
 ## 2025-06-28
 ### **New Features & Improvements**
 - Added **new hiding options** for various UI elements (video action buttons, Shorts components, player overlays, ticket shelf, etc.)

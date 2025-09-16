@@ -1,5 +1,8 @@
 # X changelog
 
+## 2025-09-16
+- Downgraded to 10.48.0-release.0 to improve compatibility with the patches
+
 ## 2025-06-28
 - Updated to 10.86.0-release.0
 
