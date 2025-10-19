@@ -1,5 +1,9 @@
 # X changelog
 
+## 2025-10-19
+- Update to 10.86.0-release.0
+- Remove non functional and obsolete patch `Open links with app chooser`
+
 ## 2025-09-16
 - Downgraded to 10.48.0-release.0 to improve compatibility with the patches
 

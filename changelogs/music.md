@@ -1,5 +1,16 @@
 # ReVanced Music changelog
 
+## 2025-10-19
+- Update to 8.10.52
+- **Spoof video streams**: Remove iPadOS client
+- Add **Enable debugging** patch
+- Add **Hide cast button** and **Navigation bar** patches
+- Add **Check watch history domain name resolution**
+- Add **Sanitize sharing links** patch
+- Add **Theme** patch
+- Add **Custom branding** patch
+- Add **Force original audio** patch
+
 ## 2025-09-16
 - Downgraded to 7.29.52
 - Fixed 400 error

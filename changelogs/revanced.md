@@ -1,5 +1,28 @@
 # ReVanced changelog
 
+## 2025-10-19
+- Update to 20.14.43
+- **Spoof video streams**: Do not use Android Creator for livestreams
+- **Spoof video streams**: Show Android Studio in spoof stream menu
+- **Hide video action buttons**: Add "Hide Shop button" setting
+- **Hide video action buttons**: Add "Hide comments" button
+- **Hide Shorts components**: Fix "Hide preview comment"
+- **Return YouTube Dislike**: Do not show error toast if API returns 401 status
+- **Settings**: Use an overlay to show search results
+- Add **Disable video codecs** patch
+- **Hide layout components**: Add `Hide Emoji and Timestamp buttons` setting
+- **Hide layout components**: Add `Hide view count` and `Hide upload time` settings
+- **Loop video**: Add player button to change loop video state
+- **Spoof app version**: Add spoof target `20.05.46` that fixes transcript functionality
+- **Force original audio**: Change patch to default on
+- **Force original audio**: Resolve some videos using Swedish audio track
+- **Force original audio**: Do not use translated audio if stream spoofing is off and force audio is on
+- **Hide end screen cards**: Hide new type of end screen card
+- **Spoof video streams**: Add `Allow Android VR AV1` setting
+- **Spoof video streams**: Resolve playback dropping frames
+- Resolve UI components not hiding for some users
+- **Custom branding**: Use ReVanced icon for status bar notification icon
+
 ## 2025-09-16
 - **Hide layout components**: Add Hide in history option to filter bar
 - **SponsorBlock**: Add "Undo automatic skip toast"
