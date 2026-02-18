@@ -1,5 +1,33 @@
 # ReVanced changelog
 
+## 2026-02-18
+**UI & Layout Improvements**
+- Several new "Hide" options added for layout components: community posts, hype points, featured content, subscribe/join buttons, cell dividers, featured links/videos, and a new type of crowdfunding box
+- Fixed "Hide Subscribe button" on channel pages not working
+
+**Shorts**
+- New hide options: auto-dubbed label and live preview
+
+**Player & Audio**
+- New **"Pause on audio interrupt"** patch added
+- "Hide Listen with YouTube Music" option added to the player flyout menu
+- Audio menu can now be hidden with the "Android No SDK" client type
+
+**Video Streaming / Spoofing**
+- New experimental **"Android No SDK"** client type added
+- Removed the spoof stream audio selector (no longer functional)
+- "Force original audio" now falls back to visionOS if Android VR is unavailable
+
+**Bug Fixes**
+- Fixed DNS check giving a false positive warning when the internet connection drops mid-check
+- Fixed a settings search crash triggered by specific words
+
+**Other**
+- Header logo switched to SVG format
+- Additional languages added to the ReVanced language preference
+- New debugging setting to block experimental client flags
+- Sharing links now handle non-hierarchical URLs
+
 ## 2025-10-19
 - Update to 20.14.43
 - **Spoof video streams**: Do not use Android Creator for livestreams

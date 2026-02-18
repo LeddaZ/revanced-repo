@@ -1,5 +1,12 @@
 # ReVanced Music changelog
 
+## 2026-02-18
+- **Hide category bar**: Correctly hide the category bar in newer app targets
+- Add **Change miniplayer color** patch
+- Add **Hide buttons** patch
+- Add **Hide layout components** patch
+- Add **Unlock Android Auto Media Browser** patch
+
 ## 2025-10-19
 - Update to 8.10.52
 - **Spoof video streams**: Remove iPadOS client
