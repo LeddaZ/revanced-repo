@@ -1,4 +1,11 @@
 # Morphe Repo ![downloadCount](https://img.shields.io/github/downloads/LeddaZ/morphe-repo/total?color=blue&label=Downloads)
+> [!warning]
+> **DISCONTINUATION NOTICE**
+>
+> The project has been discontinued. You can read more about it [here](https://t.me/LeddaZchannel/354).
+>
+> TLDR: the official Morphe app is better, I recommend using that. Thanks for using my Updater over the years!
+
 This repo template will allow you to build Morphe-patched YouTube and YouTube Music using GitHub Actions. This will help people who don't want to setup build environments on their machines.
 
 > [!warning]
